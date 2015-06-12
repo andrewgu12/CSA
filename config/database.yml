@@ -23,7 +23,12 @@ default: &default
 
 development:
   <<: *default
+  # url: postgres://rnuzukndndfjcn:QnFxY357GyJBwmzYDVPyAipFmV@ec2-54-83-46-91.compute-1.amazonaws.com:5432/d7bq27m937tkh8
+  host: localhost
+  username: mingbo
   database: csa_development
+  password: csalove
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,6 +85,8 @@ test:
 #
 production:
   <<: *default
-  database: csa_production
-  username: csa
-  password: <%= ENV['CSA_DATABASE_PASSWORD'] %>
+  host: ec2-54-83-17-8.compute-1.amazonaws.com
+  url: postgres://fsjrfthojinzmz:21zsXyFwP5dbgR1_kKymlOPxwi@ec2-54-83-17-8.compute-1.amazonaws.com:5432/da4jpve4ikh2lt
+  database: da4jpve4ikh2lt
+  username: fsjrfthojinzmz
+  password: 21zsXyFwP5dbgR1_kKymlOPxwi
