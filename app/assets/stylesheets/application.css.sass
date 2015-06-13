@@ -10,6 +10,28 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree .
  */
+
+@font-face 
+	font-family: 'OpenSans'
+	src: url('OpenSans-Regular.ttf')
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'OpenSans'
+	src: url('OpenSans-Bold.ttf')
+	font-weight: bold
+	font-style: normal		
+@font-face
+	font-family: 'OpenSans'
+	src: url('OpenSans-Semibold.ttf')
+	font-weight: semibold
+	font-style: normal	
+@import "bootstrap-sprockets"
+$navbar-default-bg: transparent
+$navbar-height: 100px
+$font-family-sans-serif: 'OpenSans' !default
+@import "bootstrap"
+
