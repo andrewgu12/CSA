@@ -3,5 +3,5 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ -> 
 	# $("#welcome").slideDown(800);
-	$("#csa").slideDown(500);
-	
+	$("#welcome").slideDown(500);
+	$("#csa").delay(500).slideDown(500);
