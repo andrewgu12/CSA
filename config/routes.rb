@@ -11,7 +11,8 @@ Rails.application.routes.draw do
   # home page
   root 'static_pages#home'
 
-  get 'about' => 'static_pages/about'
+  get '/about' => 'static_pages#about'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
