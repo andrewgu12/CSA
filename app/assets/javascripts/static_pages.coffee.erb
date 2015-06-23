@@ -1,12 +1,14 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
-$ -> 
+# $(document).on 'page:load', ->
 	# $("#welcome").slideDown(800);
+
+ready = ->	
 	$("#welcome").delay(300).slideDown(500);
 	$("#csa").delay(800).slideDown(500);
 
-	$('body').vegas
+	$('body#homePage').vegas
 		timer: false,
 		transitionDuration: 500,
 		# autoplay: false,
@@ -15,3 +17,6 @@ $ ->
 			{src: '<%= asset_path('background_2.jpg')%>'}
 			{src: '<%= asset_path('background_3.jpg')%>'}
 		]
+# turbolinks treats everything like a single page -> compatible with regular page load and click links
+$(document).ready ready
+$(document).on 'page:load', ready
