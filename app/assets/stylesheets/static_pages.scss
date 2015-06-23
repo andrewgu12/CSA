@@ -12,29 +12,42 @@ html {
 	background-color: transparent;*/
 }
 
-.navbar-default .navbar-nav li{
-	a {
-		font-weight: 600;
-		font-size: 24px;
-		color: #FFFFFF;
-	}
-	a:hover {
-		color: #FFF;
-		text-decoration: underline;
-	}
-	a:visited {
-		color: #FFF;
-	}
+.navbar-default .navbar-nav {
 
+	li{
+		a {
+			font-weight: 600;
+			font-size: 24px;
+			color: #FFFFFF;
+		}
+		a:hover {
+			color: #FFF;
+			text-decoration: underline;
+		}
+		a:visited {
+			color: #FFF;
+		}
+	}
 }
 .navbar-brand {
 	padding-top: 10px;
 }
 
+nav#otherPagesBar {
+	
+	margin-bottom: 0;
+}
+div.jumbotron {
+	padding: 0;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
 div#welcome_intro {
 	width: 80%;
 	margin: 0 auto;
-	margin-top: 5%;
+	margin-top: 7%;
 	h1, h3 {
 		color: #FFF;
 	}
