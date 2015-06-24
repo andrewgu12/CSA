@@ -12,30 +12,21 @@ html {
 	background-color: transparent;*/
 }
 
-.navbar-default .navbar-nav {
-
-	li{
-		a {
-			font-weight: 600;
-			font-size: 24px;
-			color: #FFFFFF;
-		}
-		a:hover {
-			color: #FFF;
-			text-decoration: underline;
-		}
-		a:visited {
-			color: #FFF;
-		}
-	}
-}
 .navbar-brand {
-	padding-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 0;
 }
-
 nav#otherPagesBar {
 	
 	margin-bottom: 0;
+	li:hover {
+		background: #FFF;		
+		transition: background-color 1s;
+	}
+	li a:hover {
+		color: #000;
+		transition: color 1s;
+	}
 }
 div.jumbotron {
 	padding: 0;
@@ -43,25 +34,4 @@ div.jumbotron {
 		display: block;
 		margin: 0 auto;
 	}
-}
-div#welcome_intro {
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 7%;
-	h1, h3 {
-		color: #FFF;
-	}
-	h3 {
-		font-size: 40px;
-		margin-bottom: 0;
-		display: none;		
-	}
-	h1 {
-		font-weight: 700;
-		font-size: 72px;
-		text-decoration: underline;
-		margin-top: -5px;
-		display: none;
-	}
-
 }
