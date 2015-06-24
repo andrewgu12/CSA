@@ -1,0 +1,44 @@
+
+.navbar-default .navbar-nav {
+
+	li{
+		a {
+			font-weight: 600;
+			font-size: 24px;
+			color: #FFFFFF;
+		}
+		a:hover {
+			color: #FFF;
+			text-decoration: underline;
+			transition: text-decoration 1s;
+		}
+		a:visited {
+			color: #FFF;
+		}
+	}
+}
+.navbar-brand {
+	padding-top: 10px;
+}
+
+div#welcome_intro {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 7%;
+	h1, h3 {
+		color: #FFF;
+	}
+	h3 {
+		font-size: 40px;
+		margin-bottom: 0;
+		display: none;		
+	}
+	h1 {
+		font-weight: 700;
+		font-size: 72px;
+		text-decoration: underline;
+		margin-top: -5px;
+		display: none;
+	}
+
+}
