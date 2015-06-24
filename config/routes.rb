@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   # get '/home' => 'static_pages#home'
   get '/about' => 'static_pages#about'
-
+  get '/events' => 'static_pages#events'
+  get '/contact' => 'static_pages#contact'
+  get '/register' => 'static_pages#register'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
