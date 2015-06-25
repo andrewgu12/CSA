@@ -5,9 +5,11 @@
 	# $("#welcome").slideDown(800);
 
 ready = ->	
+	# index page text slide in
 	$("#welcome").delay(300).slideDown(500);
 	$("#csa").delay(800).slideDown(500);
 
+	# home page slideshow
 	$('body#homePage').vegas
 		timer: false,
 		transitionDuration: 500,
