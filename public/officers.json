@@ -1,0 +1,58 @@
+{
+  "officers": [
+    {
+		"name": "Alice Liu",
+		"role": "Co-President",
+		"class": "2016",		
+		"id":"alice"
+    },
+    {
+    	"name": "Matthew Jiang",
+		"role": "Co-President",
+		"class": "2018",		
+		"id" : "matt"
+    },
+    {
+    	"name": "Angela Kang",
+    	"role": "VP Administration & Fundraising Chair",
+    	"class": "2016",    	
+    	"id" : "angela"
+    },
+    {
+    	"name": "Sophia Peng",
+    	"role": "VP Finance",
+    	"class": "2018",    	
+    	"id" : "sophia"
+    },
+    {
+    	"name": "Emily Liang",
+    	"role": "VP External",
+    	"class": "2016",    	
+    	"id":"emily"
+    },
+    {
+    	"name": "Valery Leng",
+    	"role": "AO Representative",
+    	"class": "2016",    	
+    	"id" : "valery"
+    },
+    {
+    	"name": "John Soong",
+    	"role": "AO Representative",
+    	"class": "2018",    	
+    	"id" : "john"
+    },
+    {
+    	"name": "Matt Zhang",
+    	"role": "Webmaster",
+    	"class": "2018",    	
+    	"id" : "andrew"
+    },
+    {
+    	"name": "Kevin Chan",
+    	"role": "Historian",
+    	"class": "2017",    	
+    	"id" : "kevin"
+    }
+  ]
+}

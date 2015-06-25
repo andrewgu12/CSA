@@ -2,6 +2,15 @@
 <h1>About Us</h1>
 <p>We are University of Maryland's chapter of the Chinese Student Association. Blah blah blah. Click on each of the faces to learn more about the E-Board!</p>
 </div>
-<div id="officerPictures" ng-app="officers" ng-controller="officerCtrl">
-	{{test}}
+<div id="officersPage" class="row" ng-app="officersApp" ng-controller="officerCtrl">
+	<div id="officerPics" class="col-md-6">
+		<div class="officer" ng-repeat="officer in officersGroup">			
+			<%= image_tag('logo.png', :id=>"{{officer.id}}", size: '140x140', :class=>"img-responsive, img-thumbnail") %>	
+			<div class="description">
+				{{officer}}
+			</div>
+		</div>
+	</div>
+	<div id="moreDetails" class="col-md-6">
+	</div>
 </div>

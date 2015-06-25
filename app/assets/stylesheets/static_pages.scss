@@ -41,5 +41,25 @@ div#content {
 	margin: 0 auto;
 	div#descriptionUs {
 		border-bottom: 1px dotted #000;
+		margin-bottom: 20px;
+	}
+	div#officerPics {
+		// width: 480;
+		margin-left: 0;
+		// display: inline;
+		div.officer {
+			display: inline;
+			img {
+				height: 140px;
+				width: 140px;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				cursor: move;
+			}
+			div.description {
+				display: none;
+			}
+		}
+
 	}
 }
