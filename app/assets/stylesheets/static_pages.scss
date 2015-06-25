@@ -39,4 +39,7 @@ div.jumbotron {
 div#content {
 	width: 960px;
 	margin: 0 auto;
+	div#descriptionUs {
+		border-bottom: 1px dotted #000;
+	}
 }
