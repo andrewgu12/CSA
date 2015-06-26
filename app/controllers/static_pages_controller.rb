@@ -10,9 +10,6 @@ class StaticPagesController < ApplicationController
 	def events
 	end
 
-	def contact
-	end
-
 	def register
 	end
 

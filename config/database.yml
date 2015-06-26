@@ -25,7 +25,7 @@ development:
   <<: *default
   # url: postgres://rnuzukndndfjcn:QnFxY357GyJBwmzYDVPyAipFmV@ec2-54-83-46-91.compute-1.amazonaws.com:5432/d7bq27m937tkh8
   host: localhost
-  username: mingbo
+  username: matthewjiang
   database: csa_development
   password: csalove
 
