@@ -19,7 +19,7 @@ class ContactMailer < ActionMailer::Base
       when "development"
         "matthewljiang@gmail.com"
       when "production"
-        ""
+        "csacollegepark@gmail.com"
     end
   end
 
