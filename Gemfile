@@ -43,6 +43,9 @@ gem 'autoprefixer-rails'
 
 # User pry debugger console instead of irb console
 
+  # postmark mailer
+  gem 'postmark-rails'
+  
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -55,8 +58,6 @@ group :development, :test do
 
   gem 'pry-rails'
 
-  # postmark mailer
-  gem 'postmark-rails'
 
 end
 
