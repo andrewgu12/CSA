@@ -23,6 +23,10 @@ ready = ->
 	# $('#csa').fitText()
 	# $(document).on 'click', '.officerPics img', ->
 	# 	alert 'Yo!'
+	$('#calendar').fullCalendar 
+		googleCalendarApiKey: 'AIzaSyDDwD24U4FLlYgh6eZQ3OQoa1wBVihSjWs'		
+		events: 
+			googleCalendarId: 'csaumcp@gmail.com'
 # turbolinks treats everything like a single page -> compatible with regular page load and click links
 $(document).ready ready
 $(document).on 'page:load', ready
