@@ -55,6 +55,13 @@ div#content {
 		border-bottom: 1px dotted #000;
 		margin-bottom: 20px;
 	}
+	div.form-group {
+		margin-left: 0;
+		label.control-label {
+			text-align: left;
+			padding-left: 0;
+		}
+	}
 	div#officersPage {
 		
 		// margin: 0 auto;
