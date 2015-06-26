@@ -10,6 +10,7 @@ html {
 	  -o-background-size: cover;
 	  background-size: cover;
 	background-color: transparent;*/
+	width: 100%;
 }
 
 .navbar-brand {
@@ -50,7 +51,7 @@ div#content {
 			width: 500px;
 			// margin-left: 0;
 			// padding-right: 0;
-			// border-right: 1px dotted #E8E8E8;
+			// border-left: 1px solid #949494;
 			div.officer {
 				display: inline;
 				img {
@@ -63,18 +64,20 @@ div#content {
 				div.description {
 					display: none;
 				}
-			}
+				div.modal {
+					h4 {
+						font-weight: bold;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+			}			
 
 		}
 		div#moreDetails {
 			max-height: 450px;
-			margin-left: 0;
-			
-			img {							
-				max-width: 400px;
-				max-height: 400px;
-				margin: 0 auto;
-			}
+			margin-left: 0;						
 		}
 	}
 }

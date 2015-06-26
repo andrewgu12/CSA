@@ -3,55 +3,73 @@
     {
 		"name": "Alice Liu",
 		"role": "Co-President",
+        "major": "",        
 		"class": "2016",		
+        "funFact": "",
 		"id":"alice"
     },
     {
     	"name": "Matthew Jiang",
 		"role": "Co-President",
+        "major": "",        
 		"class": "2018",		
+        "funFact": "",
 		"id" : "matt"
     },
     {
     	"name": "Angela Kang",
     	"role": "VP Administration & Fundraising Chair",
+        "major": "",        
     	"class": "2016",    	
+        "funFact": "",
     	"id" : "angela"
     },
     {
     	"name": "Sophia Peng",
     	"role": "VP Finance",
+        "major": "",        
     	"class": "2018",    	
+        "funFact": "",
     	"id" : "sophia"
     },
     {
     	"name": "Emily Liang",
     	"role": "VP External",
+        "major": "",        
     	"class": "2016",    	
+        "funFact": "",
     	"id":"emily"
     },
     {
     	"name": "Valery Leng",
     	"role": "AO Representative",
+        "major": "",        
     	"class": "2016",    	
+        "funFact": "",
     	"id" : "valery"
     },
     {
     	"name": "John Soong",
     	"role": "AO Representative",
+        "major": "",        
     	"class": "2018",    	
+        "funFact": "",
     	"id" : "john"
     },
     {
-    	"name": "Matt Zhang",
+    	"name": "Andrew Gu",
     	"role": "Webmaster",
+        "major": "",        
     	"class": "2018",    	
+        "funFact": "",
     	"id" : "andrew"
     },
     {
     	"name": "Kevin Chan",
     	"role": "Historian",
+        "major": "",        
     	"class": "2017",    	
+        "funFact": "",
     	"id" : "kevin"
     }
   ]
