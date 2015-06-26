@@ -21,6 +21,9 @@ module Csa
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.action_mailer.delivery_method = :postmark
+    config.cation_mailer.postmark_settings = { :api_token => "62fe62df-c038-4107-8dd5-f877c9a1a65a"}
+
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
