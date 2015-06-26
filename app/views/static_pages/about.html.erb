@@ -1,17 +1,44 @@
 <div id="descriptionUs">
 <h1>About Us</h1>
-<p>We are University of Maryland's chapter of the Chinese Student Association. Blah blah blah. Click on each of the faces to learn more about the E-Board!</p>
+
 </div>
 <div id="officersPage" class="row" ng-app="officersApp" ng-controller="officerCtrl">
+	<div id="moreDetails" class="col-md-6 row">
+		<p>We are University of Maryland's chapter of the Chinese Student Association. Blah blah blah. Click on each of the faces to learn more about the E-Board!</p>
+	</div>
 	<div id="officerPics" class="col-md-6">
 		<div class="officer" ng-repeat="officer in officersGroup">			
-			<%= image_tag('logo.png', :id=>"{{officer.id}}", size: '140x140', :class=>"img-responsive, img-thumbnail") %>	
-			<div class="description">
+			<%= image_tag('logo.png', :id=>"{{officer.id}}", size: '140x140', :class=>"img-responsive, img-thumbnail", :data=>{:toggle=>"modal", :target=>"##{}{{officer.id}}Modal"}) %>	
+			<!-- <div class="description">
 				{{officer}}
+			</div> -->
+			<div class="modal fade" id="{{officer.id}}Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+			      		<div class="modal-header">
+			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        		<h4 class="modal-title" id="myModalLabel">{{officer.name}}, {{officer.role}}</h4>
+			      		</div>
+			      		<div class="modal-body row">
+			      			<div class="col-md-4">
+			      				<%= image_tag('logo.png', size: '140x140', :class=>"img-responsive, img-rounded") %>
+			      			</div>
+			      			<div class="col-md-8">
+			      				<p>
+			      					Name: {{officer.name}} <br />
+			      					Position: {{officer.role}} <br />
+			      					Class: {{officer.class}} <br />
+			      					Major: {{officer.major}} <br />
+			      					Fun Fact: {{officer.funFact}} <br />
+			      				</p>
+			      			</div>
+			      		</div>
+			      		<div class="modal-footer">
+			        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>			        
+			      		</div>
+			    	</div>
+			  	</div>
 			</div>
 		</div>
-	</div>
-	<div id="moreDetails" class="col-md-6 row">
-		
-	</div>
+	</div>	
 </div>
