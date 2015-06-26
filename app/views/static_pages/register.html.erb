@@ -1,1 +1,49 @@
-<h1>staticpages#register</h1>
+<div class="title">
+<h1>Sign Up!</h1>
+<p>Welcome! Fill out this form and you'll automatically be included in our listserv so you can get all our exciting news and announcements!</p>
+<p>Please select your shirt size when you register. We will soon send out an email telling you when and where you pick up the shirt. Please bring $10(?)! <a href="#">This</a> is what the shirt looks like.</p>
+</div>
+<form class="form-horizontal" id="registerNew">
+	<div class="form-group">
+		<label for="name" class="col-sm-2">Name:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="name" placeholder="Jay Chou"/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="email" class="col-sm-2">Email: </label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email" placeholder="jay@jaychou.com" />
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-md-6 selectMenu">
+			<label for="shirtSize" class="col-sm-4">Shirt Size:</label>
+			<div class="col-sm-8">
+				<select class="form-control" id="shirtSize">					
+					<option value="s">Small</option>
+					<option value="m">Medium</option>
+					<option value="l">Large</option>
+					<option value="n">Don't need one</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-6 selectMenu">
+			<label for="year" class="col-sm-2">Year:</label>
+			<div class="col-sm-10">
+				<select class="form-control" id="year">
+					<option value="f">Freshmen</option>
+					<option value="s">Sophomore</option>
+					<option value="j">Junior</option>
+					<option value="s">Senior</option>
+					<option value="ss">Super Senior</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	    	<button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Sign up!</button>
+	    </div>
+  	</div>
+</form>
