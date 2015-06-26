@@ -4,8 +4,8 @@ class ContactController < ApplicationController
   end
 
   def create
-    ContactMailer.contact(email_params).deliver
-    redirect_to root_path
+    ContactMailer.contact(email_params).deliver_now
+    redirect_to contact_path, :notice => "Your question has been sent!"
   end
 
   private
