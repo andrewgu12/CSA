@@ -11,7 +11,7 @@ html {
 	  background-size: cover;
 	background-color: transparent;*/
 	width: 100%;
-	overflow-x: hidden;
+	
 }
 div.navbar-header {
 	padding-left: 10px;
@@ -36,6 +36,7 @@ div.container-fluid {
 	padding-left: 0;
 	padding-right: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 div.jumbotron {
 	padding: 0;
@@ -48,8 +49,8 @@ div.jumbotron {
 div#content {
 	max-width: 930px;
 	margin: 0 auto;
-	padding-right: 20px;
-	padding-left: 5px;
+	padding-right: 10px;
+	// padding-left: 5px;
 	div.title {
 		border-bottom: 1px dotted #000;
 		margin-bottom: 20px;
@@ -87,7 +88,11 @@ div#content {
 		}
 		div#moreDetails {
 			max-height: 450px;
-			margin-left: 0;						
+			margin-left: 0;		
+			p {
+				margin-right: 10px;
+				margin-left: 10px;				
+			}
 		}
 	}
 }
