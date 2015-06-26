@@ -30,6 +30,7 @@ gem 'jquery-turbolinks'
 gem 'bootstrap-sass', '~> 3.3.4'
 #autoprefixer
 gem 'autoprefixer-rails'
+gem 'postmark-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 #Holder.js
@@ -57,7 +58,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'pry-rails'
-
 
 end
 

@@ -26,7 +26,7 @@ class ContactMailer < ActionMailer::Base
   def email_subject(contact)
     # Format for email subject 
     # Given first_name, last_name, email, company_name, job_title, question
-    "Developer Site contact submission from #{contact['first_name']} #{contact['last_name']}"
+    "Contact us email from #{contact['first_name']} #{contact['last_name']}"
   end
 
 end
