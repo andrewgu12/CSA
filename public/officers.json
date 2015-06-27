@@ -20,15 +20,15 @@
     	"name": "Angela Kang",
     	"role": "VP Administration & Fundraising Chair",
         "major": "Public Relations",        
-    	"class": "",    	
+    	"class": "Spring 2016",    	
         "funFact": "",
     	"id" : "angela"
     },
     {
     	"name": "Sophia Peng",
     	"role": "VP Finance",
-        "major": "",        
-    	"class": "2018",    	
+        "major": "Accounting",        
+    	"class": "Spring 2018",    	
         "funFact": "",
     	"id" : "sophia"
     },
@@ -36,7 +36,7 @@
     	"name": "Emily Liang",
     	"role": "VP External",
         "major": "Physiology & Neurobiology",        
-    	"class": "",    	
+    	"class": "Spring 2016",    	
         "funFact": "",
     	"id":"emily"
     },
@@ -67,7 +67,7 @@
     {
     	"name": "Kevin Chan",
     	"role": "Historian",
-        "major": "",        
+        "major": "Accounting & Supply Chain",        
     	"class": "Spring 2017",    	
         "funFact": "",
     	"id" : "kevin"
