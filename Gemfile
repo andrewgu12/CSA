@@ -31,6 +31,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 #autoprefixer
 gem 'autoprefixer-rails'
 gem 'postmark-rails'
+# gem "friendly_id", "~> 5.0.1"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 #Holder.js
@@ -44,8 +45,6 @@ gem 'postmark-rails'
 
 # User pry debugger console instead of irb console
 
-  # postmark mailer
-  gem 'postmark-rails'
   
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

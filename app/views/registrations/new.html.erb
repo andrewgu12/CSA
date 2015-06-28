@@ -1,0 +1,67 @@
+<div class="title">
+<h1>Sign Up!</h1>
+<p>Welcome! Fill out this form and you'll automatically be included in our listserv so you can get all our exciting news and announcements!</p>
+<p>Please select your shirt size when you register. We will soon send out an email telling you when and where you pick up the shirt. Please bring $10(?)! <a href="#">This</a> is what the shirt looks like.</p>
+</div>
+<%= form_for(@registration, :html => {class: "form-horizontal", :id=>"addNew"}) do |f| %>
+	<% if @registration.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+			<ul>
+			<% @registration.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+	<div class="field form-group">
+		<%= f.label :firstName, :class=>'col-sm-2 control-label' %>
+		<div class="col-sm-10">
+			<%= f.text_field :firstName, :class=>"form-control", :placeholder => 'Jay' %>
+		</div>
+	</div>
+	<div class="field form-group">
+		<%= f.label :lastName, :class=>'col-sm-2 control-label' %>
+		<div class="col-sm-10">
+			<%= f.text_field :lastName, :class=>"form-control", :placeholder => 'Chou' %>
+		</div>
+	</div>
+	<div class="field form-group">
+		<%= f.label :email, :class=>'col-sm-2 control-label' %>
+		<div class="col-sm-10">
+			<%= f.text_field :email, :class=>"form-control", :placeholder => 'jay@jaychou.com' %>
+		</div>
+	</div>
+	<!-- <div class="form-group row"> -->
+		<!-- <div class="col-md-6 selectMenu"> -->
+			<div class="field form-group">
+				<%= f.label :shirtSize, :class=>'col-sm-2 control-label' %>
+				<div class="col-sm-10">          
+					<%= f.select :shirtSize, options_for_select([['Small', 'small'], ['Medium', 'medium'], ['Large', 'large'], ['Do not need one', 'none']], selected: :shirtSize), {}, {:class => 'form-control'} %>
+				</div>
+			</div>
+		<!-- </div>       -->
+		<!-- <div class="col-md-6 selectMenu"> -->
+			<div class="field form-group">
+				<%= f.label :year, :class=>'col-sm-2 control-label' %>
+				<div class="col-sm-10">
+					<!-- <%= f.text_field :year %>-->
+					<%= f.select :year, options_for_select([['Freshmen', 'freshmen'], ['Sophomore', 'sophomore'], ['Junior', 'junior'], ['Senior', 'senior'], ['Super Senior', 'supersenior']], selected: :year),{}, {:class => 'form-control'}  %>
+				</div>  
+			</div>
+		<!-- </div> -->
+	<!-- </div> -->
+	<div class="form-group actions">
+	    <div class="col-sm-offset-2 col-sm-10">
+	    	<!-- <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Sign up!</button> -->
+	    	<%= button_tag(type: 'submit', class: "btn btn-red btn-default") do %>
+			 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Sign up!
+			<% end %>
+	    </div>
+  	</div>
+<% end %>
+
+
+<!--<%= link_to 'Back', registrations_path %>-->

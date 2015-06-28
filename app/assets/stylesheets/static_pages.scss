@@ -55,16 +55,7 @@ div#content {
 		border-bottom: 1px dotted #000;
 		margin-bottom: 20px;
 	}
-	div.form-group {
-		margin-left: 0;
-		label.control-label {
-			text-align: left;
-			padding-left: 0;
-		}
-		div.col-sm-10, div.col-sm-8 {
-			padding-left: 0;
-		}
-	}
+
 	div#officersPage {
 		
 		// margin: 0 auto;
@@ -128,4 +119,28 @@ footer {
 	p.text-muted {
 		color: #B6B6B6;
 	}
+}
+
+form#addNew {
+	// padding-top: 100px;
+	div.form-group {
+		margin-left: 0;
+		label.control-label {
+			text-align: left;
+			padding-left: 0;
+		}
+		div.col-sm-10, div.col-sm-8 {
+			padding-left: 0;
+		}
+	}
+	div.selectMenu {
+		// padding-top: 50px;
+		label.control-label {
+			padding-right: 0;
+		}
+		div.col-sm-10, div.col-sm-8{
+			// padding-right: 0;
+		}
+	}
+
 }
