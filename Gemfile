@@ -31,6 +31,10 @@ gem 'bootstrap-sass', '~> 3.3.4'
 #autoprefixer
 gem 'autoprefixer-rails'
 gem 'postmark-rails'
+# gem 'gdata'
+gem 'google-api-client'
+gem 'google_drive'
+# gem 'google-api-client'
 # gem "friendly_id", "~> 5.0.1"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
