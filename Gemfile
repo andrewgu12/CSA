@@ -28,6 +28,8 @@ gem 'jquery-turbolinks'
 
 #bootstrap
 gem 'bootstrap-sass', '~> 3.3.4'
+#Font Awesome
+gem 'font-awesome-sass'
 #autoprefixer
 gem 'autoprefixer-rails'
 gem 'postmark-rails'

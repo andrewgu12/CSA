@@ -68,6 +68,8 @@ GEM
     extlib (0.9.16)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    font-awesome-sass (4.3.2.1)
+      sass (~> 3.2)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     google-api-client (0.8.2)
@@ -211,6 +213,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.4)
   byebug
   coffee-rails (~> 4.1.0)
+  font-awesome-sass
   google-api-client
   google_drive
   jbuilder (~> 2.0)
@@ -228,4 +231,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.4
+   1.10.5
