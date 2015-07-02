@@ -22,9 +22,9 @@ module Csa
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.action_mailer.delivery_method = :postmark
-    config.action_mailer.postmark_settings = { :api_token => "62fe62df-c038-4107-8dd5-f877c9a1a65a"}
+    config.action_mailer.postmark_settings = { :api_token => ENV["POSTMARK_API_KEY"], :api_key => ENV["POSTMARK_API_KEY"] }
 
     config.active_record.raise_in_transactional_callbacks = true
-    
+
   end
 end
