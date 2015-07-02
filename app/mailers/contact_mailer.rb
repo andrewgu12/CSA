@@ -1,6 +1,6 @@
 class ContactMailer < ActionMailer::Base
 
-  self.postmark_settings = { api_key: "62fe62df-c038-4107-8dd5-f877c9a1a65a"}
+  self.postmark_settings = { api_key: ENV["POSTMARK_API_KEY"]}
   default from: "mjiang18@umd.edu"
   def contact(contact)
     @contact = contact
