@@ -1,0 +1,50 @@
+<%= form_for(:auxiliary, :html => {:class => "form-horizontal"}) do |f| %>
+
+  <div class="form-group">
+
+    <label class="col-sm-2 control-label">First Name:</label>
+    <div class="col-sm-10">
+      <%= f.text_field :name, :required => true, :class => "form-control", :id => "name", :placeholder => "First Name" %>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+
+    <label class="col-sm-2 control-label">Email:</label>
+    <div class="col-sm-10">
+      <%= f.email_field :email, :required => true, :class => "form-control", :id => "email", :placeholder => "email@example.com" %>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+
+    <label class="col-sm-2 control-label">Major:</label>
+    <div class="col-sm-10">
+      <%= f.email_field :major, :required => true, :class => "form-control", :id => "major", :placeholder => "Major" %>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+
+    <label class="col-sm-2 control-label">Expected Semester of Graduation:</label>
+    <div class="col-sm-10">
+      <%= f.email_field :expected_graduation, :required => true, :class => "form-control", :id => "email", :placeholder => "i.e. Winter 2015" %>
+    </div>
+
+  </div>
+
+
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= button_tag(type: 'submit', class: "btn btn-red btn-default") do %>
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send!
+      <% end %>
+    </div>
+
+  </div>
+
+<% end %>

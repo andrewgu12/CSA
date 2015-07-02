@@ -25,7 +25,7 @@ class AuxiliaryMailer < ActionMailer::Base
   end
 
   def email_subject(contact)
-    "New AO Application"
+    "New AO   `Application"
   end
 
 end
