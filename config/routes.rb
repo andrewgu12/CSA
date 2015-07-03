@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   # get '/home' => 'static_pages#home'
   get '/about' => 'static_pages#about'
-  get '/events' => 'static_pages#events'
+  get '/calendar' => 'static_pages#calendar'
 
   get '/contact' => 'contact#new'
   post '/contact' => 'contact#create'

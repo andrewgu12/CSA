@@ -18,6 +18,7 @@ html {
 $footerHeight: 20px;
 body {
 	margin-bottom: $footerHeight;
+	overflow-x: hidden;
 }
 div.navbar-header {
 	padding-left: 10px;
@@ -42,7 +43,7 @@ div.container-fluid {
 	padding-left: 0;
 	padding-right: 0;
 	margin: 0;
-	overflow-x: hidden;
+
 }
 div#bodyContent {
 	padding-bottom: 10px;

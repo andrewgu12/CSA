@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
 	def about
 	end
 
-	def events
+	def calendar
 	end
 
 	def register
