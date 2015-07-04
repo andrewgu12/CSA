@@ -1,0 +1,56 @@
+# maybe someday, when I have more time... I'll get this work -> biggest problem is Bootstrap and React conflicting
+# data = JSON.parse(jsonData);
+# console.log data
+# reactReady = -> 
+#     OfficerModals = React.createClass(
+#         displayName: 'officerModals'
+#         loadInfoFromFile: ->
+#             $.ajax
+#               url: @props.url
+#               dataType: 'json'
+#               cache: false
+#               success: ((data) ->
+#                 @setState data: data.officers                
+#                 return
+#               ).bind(this)
+#               error: ((xhr, status, err) ->
+#                 console.error @props.url, status, err.toString()
+#                 return
+#               ).bind(this)
+#             return
+#         getInitialState: ->
+#             {data: [] }
+#         componentDidMount: ->            
+#             @loadInfoFromFile()            
+#             return
+#         render: ->
+#             # React.createElement(OfficerPhoto, data: @state.data), React.createElement()
+#             React.createElement(OfficerPhoto, data: @state.data)
+#     )
+#     OfficerPhoto = React.createClass(                      
+#         render: ->
+#             officerNodes = @props.data.map((officer, index) ->
+#                 # console.log officer.id
+#                 imageName = "/eboard/"+officer.id+".jpg"
+#                 React.createElement 'div', {className: 'officer'}, 
+#                 React.createElement 'img', {id: officer.id, src: "<%= image_path('/eboard/#{officer.id}.jpg') %>", className: "img-responsive, img-thumbnail", 'data-toggle': "modal", 'data-target': officer.id+"Modal"}
+#                 # Rails.createElement 'div', {}
+#             )
+#             console.log @props.data
+#             React.createElement 'div', { className: 'commentList' }, officerNodes, React.createElement(OfficerModal, data: @props.data)
+#     )
+
+#     OfficerModal = React.createClass(
+#         render: ->
+#             officerModal = @props.data.map((officer, index) ->
+#                 React.createElement 'div', {className: "modal fade", id: "#{officer.id}Modal", 'tab-index': -1, role: 'dialog', 'aria-labelledby': 'myModalLabel'},
+#                 React.createElement 'div', {className: "modal-dialog", role: "document"},
+#                 React.createElement 'div', {className: "modal-content"} 
+
+#             )
+#             React.createElement 'div', {className: 'modals'}, officerModal
+#     )
+#     React.render React.createElement(OfficerModals, {url: "officers.json"}), $('#officerPics').get 0
+
+# $(document).ready reactReady
+# $(document).on 'page:load', reactReady

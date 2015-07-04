@@ -1,0 +1,13 @@
+# Contains the Angular code for the officer page -> will generate all the pictures and modals based on info through JSON file
+app = angular.module('officersApp', [])
+
+app.controller 'officerCtrl', [
+	'$scope'
+	'$http'
+	($scope, $http) ->
+		$http.get('./officers.json').success (data) ->	
+			console.log(data)
+			$scope.officersGroup = data.officers
+			console.log($scope.officersGroup)	
+		# return
+]

@@ -27,6 +27,8 @@ ready = ->
 		googleCalendarApiKey: 'AIzaSyCHI8YwUquGBULKNrqULHiYbN-YMtOOmjo'		
 		events: 
 			googleCalendarId: '3qeg0ij57jgh6k0crbmccl8q5s@group.calendar.google.com'
+	$('img').on 'click', ->
+		alert 'clicked!'
 # turbolinks treats everything like a single page -> compatible with regular page load and click links
 $(document).ready ready
 $(document).on 'page:load', ready
