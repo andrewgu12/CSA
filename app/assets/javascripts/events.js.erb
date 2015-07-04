@@ -1,0 +1,28 @@
+var app = angular.module('eventsApp', ['ngRoute', 'templates']);
+
+app.config([
+  '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {  
+  	// console.log($routeProvider.$get);
+  	$locationProvider.html5Mode({enabled: true, requireBase: false});
+    $routeProvider.
+     when('/events/:id', {
+        templateUrl: '../templates/eventTemp.html',
+        controller: 'EventsCtrl'
+     }).
+     otherwise({
+    	templateUrl: '../templates/eventTemp2.html',
+      	controller: 'EventsCtrl2'
+     });
+  }
+]);
+app.controller('EventsCtrl', function($scope, $http, $routeParams){
+	// console.log('yo!');
+	console.log($routeParams.id);
+	$http.get('../events.json').success(function(data){
+		console.log(data.events);
+	});
+});
+
+app.controller('EventsCtrl2', function($scope, $http) {
+	console.log('yo2');
+});

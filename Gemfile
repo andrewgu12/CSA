@@ -36,7 +36,8 @@ gem 'postmark-rails'
 # gem 'gdata'
 gem 'google-api-client'
 gem 'google_drive'
-gem 'react-rails', '~> 1.0'
+gem 'angular-rails-templates'
+# gem 'react-rails', '~> 1.0'
 # gem 'google-api-client'
 # gem "friendly_id", "~> 5.0.1"
 # Use ActiveModel has_secure_password

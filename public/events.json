@@ -1,0 +1,16 @@
+{
+	"events": [
+		{
+			"name" : "Lunar Banquet",
+			"id"   : "lunar_banquet",
+			"description" : "yada yada yada",
+			"pics" : "link1, link2"
+		},
+		{
+			"name" : "Dumpling Night",
+			"id"   : "dumpling_night",
+			"description" : "weeee",
+			"pics" : "link1, link2"
+		}
+	]
+}
