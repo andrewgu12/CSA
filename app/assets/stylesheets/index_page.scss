@@ -1,5 +1,4 @@
-
-.navbar-default .navbar-nav {
+nav#indexBar{
 
 	li{
 		a {
@@ -22,11 +21,20 @@
 				color: #343434;
 				font-size: 18px;
 			}
+			a:hover {
+				background: #101010;
+				color: #FFF;
+			}
 		}
+		
 	}
 }
 .navbar-brand {
 	padding-top: 10px;
+	img {
+		height: 50px;
+		width: 50px;
+	}
 }
 
 div#welcome_intro {
