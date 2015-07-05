@@ -3,7 +3,7 @@
 		{
 			"name" : "Lunar Banquet",
 			"id"   : "lunar_banquet",
-			"date" : "date",
+			"date" : "Spring 2016",
 			"description" : "Lunar Banquet celebrates the lunar festival and then we have more words to describe the event",
 			"pics" : [
 				{
@@ -21,7 +21,7 @@
 		{
 			"name" : "Dumpling Night",
 			"id"   : "dumpling_night",
-			"date" : "date",
+			"date" : "Fall 2015",
 			"description" : "Dumpling Night is when we has food and talk and describe more about the event.",
 			"pics" : [
 				{
