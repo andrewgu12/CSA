@@ -3,14 +3,38 @@
 		{
 			"name" : "Lunar Banquet",
 			"id"   : "lunar_banquet",
-			"description" : "yada yada yada",
-			"pics" : "link1, link2"
+			"date" : "date",
+			"description" : "Lunar Banquet celebrates the lunar festival and then we have more words to describe the event",
+			"pics" : [
+				{
+					"link" : "https://www.dropbox.com/sh/bysy4qv49ys2siu/AACpEeqpxyNXK_kbIAHi24QAa?dl=0",
+					"title" : "2015",
+					"id" : "lb_2015"
+				},
+				{
+					"link" : "link2",
+					"title" : "2014",
+					"id" : "lb_2014"
+				}
+			]
 		},
 		{
 			"name" : "Dumpling Night",
 			"id"   : "dumpling_night",
-			"description" : "weeee",
-			"pics" : "link1, link2"
+			"date" : "date",
+			"description" : "Dumpling Night is when we has food and talk and describe more about the event.",
+			"pics" : [
+				{
+					"link" : "link1",
+					"title" : "2015",
+					"id" : "dn_2015"
+				},
+				{
+					"link" : "link2",
+					"title" : "2014",
+					"id" : "dn_2014"
+				}
+			]
 		}
 	]
 }

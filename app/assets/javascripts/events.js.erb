@@ -17,9 +17,17 @@ app.config([
 ]);
 app.controller('EventsCtrl', function($scope, $http, $routeParams){
 	// console.log('yo!');
-	console.log($routeParams.id);
+	var eventID = $routeParams.id;
 	$http.get('../events.json').success(function(data){
-		console.log(data.events);
+		for(var index = 0; index < data.events.length; index++) {
+			if(data.events[index].id === eventID) {
+				$scope.eventName = data.events[index].name;
+				$scope.eventDate = data.events[index].date;
+				$scope.eventDescription = data.events[index].description;
+				$scope.eventID = data.events[index].id;
+				$scope.eventPics = data.events[index].pics;
+			}
+		}
 	});
 });
 

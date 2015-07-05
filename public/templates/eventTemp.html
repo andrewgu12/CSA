@@ -1,1 +1,17 @@
-text
+<div class="title">
+<h1>{{eventName}}</h1>
+</div>
+<div class="eventDescription">
+	<p><b>Date</b>: {{eventDate}} </p>
+	<p>{{eventDescription}}</p>
+</div>	
+<div class="minorTitle">
+	<h3>Pictures</h3>
+	<p>These are photos taken by various photographers of the event in the past. All photos belong to their respective owners. The numbers below each of the albums indicate the year of the event.</p>
+</div>
+<div class="eventPictures">
+	<div class="photoSet" ng-repeat="pic in eventPics">
+		<a href="{{pic.link}}"><img ng-src="/events/{{pic.id}}.jpg" class="img-responsive, img-thumbnail" ></a>
+		<p>{{pic.title}}</p>
+	</div>
+</div>
