@@ -25,6 +25,12 @@ nav#indexBar{
 				background: #101010;
 				color: #FFF;
 			}
+			@media(max-width: 768px) {
+				a {
+					color: #FFF;
+					font-size: 18px;
+				}
+			}
 		}
 		
 	}
@@ -55,6 +61,15 @@ div#welcome_intro {
 		text-decoration: underline;
 		margin-top: -5px;
 		display: none;
+	}
+
+	@media(max-width: 768px) {
+		h3 {
+			font-size: 30px;
+		}
+		h1 {
+			font-size: 40px;
+		}
 	}
 
 }

@@ -10,10 +10,10 @@ html {
 	  -o-background-size: cover;
 	  background-size: cover;
 	background-color: transparent;*/
-	width: 100%;
+	min-width: 100%;
 	position: relative;
 	min-height: 100%;
-	
+	overflow-x: hidden;
 }
 $footerHeight: 20px;
 body {
