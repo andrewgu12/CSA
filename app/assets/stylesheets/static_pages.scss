@@ -30,13 +30,15 @@ div.navbar-header {
 nav#otherPagesBar {
 	
 	margin-bottom: 0;
-	li:hover {
-		background: #FFF;		
-		transition: background-color 1s;
-	}
-	li a:hover {
-		color: #000;
-		transition: color 1s;
+	@media(min-width: 800px) {
+		li:hover {
+			background: #FFF;		
+			transition: background-color 1s;
+		}
+		li a:hover {
+			color: #000;
+			transition: color 1s;
+		}
 	}
 }
 div.container-fluid {
@@ -60,7 +62,7 @@ div#content {
 	max-width: 930px;
 	margin: 0 auto;
 	padding-right: 10px;
-	// padding-left: 5px;
+	padding-left: 10px;
 	div.title {
 		border-bottom: 1px dotted #000;
 		margin-bottom: 20px;
