@@ -2,6 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@media(max-width: 768px) {
+	div#content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	div.officer {
+		img {
+			margin-left: 15px;
+		}
+	}
+}
 html {
 
 	/*background: image-url('home_background.jpg') no-repeat center center fixed;
@@ -74,10 +85,6 @@ div#content {
 		
 		// margin: 0 auto;
 		div#officerPics {
-			// width: 500px;
-			// margin-left: 0;
-			// padding-right: 0;
-			// border-left: 1px solid #949494;
 			div.officer {
 				display: inline;
 				img {
@@ -112,6 +119,7 @@ div#content {
 		}
 	}
 }
+
 
 div#calendar {
 	width: 100%;

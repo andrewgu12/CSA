@@ -1,3 +1,4 @@
+
 nav#indexBar{
 
 	li{
@@ -25,12 +26,6 @@ nav#indexBar{
 				background: #101010;
 				color: #FFF;
 			}
-			@media(max-width: 768px) {
-				a {
-					color: #FFF;
-					font-size: 18px;
-				}
-			}
 		}
 		
 	}
@@ -38,15 +33,16 @@ nav#indexBar{
 .navbar-brand {
 	padding-top: 10px;
 	img {
-		height: 50px;
-		width: 50px;
+		height: 60px;
+		width: 60px;
 	}
 }
 
 div#welcome_intro {
 	width: 80%;
 	margin: 0 auto;
-	margin-top: 7%;
+	margin-top: 9%;
+	text-align: center;
 	h1, h3 {
 		color: #FFF;
 	}
@@ -59,11 +55,29 @@ div#welcome_intro {
 		font-weight: 700;
 		font-size: 72px;
 		text-decoration: underline;
-		margin-top: -5px;
+		margin-top: 20px;
 		display: none;
 	}
-
-	@media(max-width: 768px) {
+}
+@media(max-width: 768px) {	
+	nav#indexBar {
+		.navbar-right {
+			margin-top: 0;
+			margin-bottom: 0;
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+	a.navbar-brand {
+		margin-top: 15px;
+		img {
+			height: 50px;
+			width: 50px;
+		}
+	}
+	div#welcome_intro {
+		text-align: left;
 		h3 {
 			font-size: 25px;
 		}
@@ -73,4 +87,12 @@ div#welcome_intro {
 		}
 	}
 
+	ul.dropdown-menu {
+		li {
+			a {
+					color: #FFF;
+					font-size: 18px;
+			}
+		}
+	}
 }
