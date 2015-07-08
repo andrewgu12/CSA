@@ -4,8 +4,8 @@
 		"name": "Alice Liu",
 		"role": "Co-President",
         "major": "Accounting & Finance",        
-		"class": "Spring 2016",		
-        "funFact": "",
+		"class": "Spring 2016/Winter 2016",		
+        "funFact": "I'm ambidextrous.",
 		"id":"alice"
     },
     {
@@ -37,7 +37,7 @@
     	"role": "VP External",
         "major": "Physiology & Neurobiology",        
     	"class": "",    	
-        "funFact": "",
+        "funFact": "I'm a bubble tea connoisseur.",
     	"id":"emily"
     },
     {
@@ -61,7 +61,7 @@
     	"role": "Webmaster",
         "major": "Computer Engineering",        
     	"class": "Spring 2018",    	
-        "funFact": "",
+        "funFact": "I'm from California!",
     	"id" : "andrew"
     },
     {
@@ -69,7 +69,7 @@
     	"role": "Historian",
         "major": "Accounting & Supply Chain",        
     	"class": "Spring 2017",    	
-        "funFact": "",
+        "funFact": "I DJ",
     	"id" : "kevin"
     }
   ]

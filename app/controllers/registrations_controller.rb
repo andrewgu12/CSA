@@ -6,12 +6,12 @@ class RegistrationsController < ApplicationController
 
  #  # GET /registrations
  #  # GET /registrations.json
-  def index
+ #  def index
 
-	@registrations = Registration.all
-	# format.html {redirect_to action: 'new'}
-	# redirect_to :action =>
-  end
+	# @registrations = Registration.all
+	# # format.html {redirect_to action: 'new'}
+	# # redirect_to :action =>
+ #  end
 
   # GET /registrations/1
   # GET /registrations/1.json
@@ -22,6 +22,7 @@ class RegistrationsController < ApplicationController
   # GET /registrations/new
   def new
 	@registration = Registration.new
+	@pageTitle = "register"
   end
 
   # POST /registrations
