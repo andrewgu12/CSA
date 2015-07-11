@@ -40620,20 +40620,39 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 }).call(this);
 var app = angular.module('eventsApp', ['ngRoute', 'templates']);
 
-app.config(['$routeProvider', '$locationProvider',
-	function($routeProvider, $locationProvider) {
-		$locationProvider.html5Mode({enabled: true, requireBase: false});
-		$routeProvider.when('events/:id', {
-			templateUrl: '../templates/eventTemp.html',
-			controller: 'EventsCtrl'
-		});
-	}
+app.config([
+  '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {  
+  	// console.log($routeProvider.$get);
+  	$locationProvider.html5Mode({enabled: true, requireBase: false});
+    $routeProvider.
+     when('/events/:id', {
+        templateUrl: '../templates/eventTemp.html',
+        controller: 'EventsCtrl'
+     }).
+     otherwise({
+    	templateUrl: '../templates/eventTemp2.html',
+      	controller: 'EventsCtrl2'
+     });
+  }
 ]);
-app.controller('EventsCtrl', function($scope, $http){
-	console.log('yo!');
-	// $http.get('./events.json').success(function(data){
-	// 	console.log(data.events);
-	// });
+app.controller('EventsCtrl', function($scope, $http, $routeParams){
+	// console.log('yo!');
+	var eventID = $routeParams.id;
+	$http.get('../events.json').success(function(data){
+		for(var index = 0; index < data.events.length; index++) {
+			if(data.events[index].id === eventID) {
+				$scope.eventName = data.events[index].name;
+				$scope.eventDate = data.events[index].date;
+				$scope.eventDescription = data.events[index].description;
+				$scope.eventID = data.events[index].id;
+				$scope.eventPics = data.events[index].pics;
+			}
+		}
+	});
+});
+
+app.controller('EventsCtrl2', function($scope, $http) {
+	console.log('yo2');
 });
 /*!
  * FullCalendar v2.3.2
@@ -51730,22 +51749,19 @@ function injectQsComponent(url, component) {
       transitionDuration: 500,
       slides: [
         {
-          src: '/assets/home_background-ee8802ddbebc8728e5dcf06564df0e73374fbfa926a34718e148d2d76ead0ac3.jpg'
+          src: '/assets/home_background-4f4348055cfd59b97f00fc3e813ddbfbeda67d004d04a52d3453dd3f15a339d8.jpg'
         }, {
-          src: '/assets/background_2-bf6ebb84baa7788389cc4f8cd5fae138539998344920170a5fe86c4fa591fe5e.jpg'
+          src: '/assets/background_2-10681ab3d28270bd19d279b70980c6a053faa99397a69303dc599eefa229ef83.jpg'
         }, {
-          src: '/assets/background_3-7edca6826bc1c7cbf75a2538603a41d58bd5cab4fd419b97107f61bb8ccc0354.jpg'
+          src: '/assets/background_3-67a0511ad0366eb855af463d66400a751a50eee39319f2696e4011aa8ae0ab10.jpg'
         }
       ]
     });
-    $('#calendar').fullCalendar({
+    return $('#calendar').fullCalendar({
       googleCalendarApiKey: 'AIzaSyCHI8YwUquGBULKNrqULHiYbN-YMtOOmjo',
       events: {
         googleCalendarId: '3qeg0ij57jgh6k0crbmccl8q5s@group.calendar.google.com'
       }
-    });
-    return $('img').on('click', function() {
-      return alert('clicked!');
     });
   };
 

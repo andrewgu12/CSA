@@ -1,10 +1,28 @@
+html {
 
+	/*background: image-url('home_background.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	background-color: transparent;*/
+	min-width: 100%;
+	position: relative;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+$footerHeight: 20px;
+body {
+	padding-bottom: $footerHeight;
+	// overflow-x: hidden;
+}
 nav#indexBar{
-
 	li{
 		a {			
 			font-size: 24px;
 			color: #FFFFFF;
+			// font-weight: bold;
 		}
 		a:hover {
 			color: #FFF;
@@ -19,7 +37,7 @@ nav#indexBar{
 		li {
 			a {
 				color: #343434;
-				font-size: 18px;
+				font-size: 18px;				
 			}
 			a:hover {
 				background: #101010;
@@ -95,4 +113,25 @@ div#welcome_intro {
 	}
 
 
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: $footerHeight;	
+	// margin-top: 15px;
+		
+	min-width: 100%;
+	line-height: $footerHeight;
+	p {
+		color: #FFF;
+		padding-left: 10px;
+	}
+	.container {
+		max-width: 960px;
+		margin: 0 auto;	
+		p {
+			color: #FFF;
+		}	
+	}
 }

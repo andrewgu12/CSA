@@ -51749,11 +51749,11 @@ function injectQsComponent(url, component) {
       transitionDuration: 500,
       slides: [
         {
-          src: '/assets/home_background-ee8802ddbebc8728e5dcf06564df0e73374fbfa926a34718e148d2d76ead0ac3.jpg'
+          src: '/home_background.jpg'
         }, {
           src: '/assets/background_2-bf6ebb84baa7788389cc4f8cd5fae138539998344920170a5fe86c4fa591fe5e.jpg'
         }, {
-          src: '/assets/background_3-7edca6826bc1c7cbf75a2538603a41d58bd5cab4fd419b97107f61bb8ccc0354.jpg'
+          src: '/assets/background_3-d6d2b1360e040514217c5e3b3dfb9f642ca41207f5ea6c50a6af8dfcc6af624c.jpg'
         }
       ]
     });
