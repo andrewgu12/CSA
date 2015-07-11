@@ -4,7 +4,7 @@
             "name": "Mooncake Festival",
             "id": "mooncake_festival",
             "date": "Fall 2015",
-            "description": "words",
+            "description": "At our first General Body Meeting of the year, we will not only be celebrating the mooncake festival but will also be introducing the Chinese Student Association. Students will learn about the club, be introduced to the  E-Board, meet new friends, and learn about the mooncake festival all the while enjoying some delicious mooncake and tea. Come and join us, especially if you’re new to campus!",
             "pics": [
                 {
                     "link": "https://www.dropbox.com/sh/uxh4y3jfensp993/AABxiC30s9Vblx209GLRQD_Xa?dl=0",
@@ -12,6 +12,13 @@
                     "id": "mc_2014"
                 }
             ]
+        },
+        {
+            "name":"Concessions",
+            "id":"concessions",
+            "date":"Fall 2015",
+            "description": "Each year, CSA will work the concession stands during football games! You will have the opportunity to prepare and fry food, serve customers, and enjoy as much fried food as you want while helping out. Come and join us!",
+            "pics": []
         },
         {
             "name": "Dumpling Night",
@@ -30,7 +37,7 @@
             "name": "Hotpot Night",
             "id": "hotpot_night",
             "date": "Fall 2015",
-            "description": "words",
+            "description": "Come and enjoy some hotpot with CSA! For a nominal fee, you’ll enjoy an assortment of delicious food with a table of people. We will provide the hot pot materials, stove, and even entertainment. You just have to show up and get ready to cook and feast.",
             "pics": [
                 {
                     "link": "https://www.dropbox.com/sh/9jd45b6bc4nxxy5/AABrYn3l5aU_S-pIRd8HA456a?dl=0",
@@ -46,22 +53,22 @@
             "description": "Lunar Banquet celebrates the lunar festival. It is our biggest event of the year with more than 400 attendees. Good food and  entertainment are always provided. It's a great chance for everyone to gather around and celebrate the start of a new lunar year.",
             "pics": [
                 {
-                    "link": "https://www.dropbox.com/sh/wt6w6ougu4dxd6x/AADDj5T9BlvIt83QCrtHdhS_a?dl=0",
-                    "title": "2014",
-                    "id": "lb_2014"
-                },
-                {
                     "link": "https://www.dropbox.com/sh/ofi64795vnkn3pa/AACcIVbiR-IVXJ1fIR6C9vxEa?dl=0",
                     "title": "2015",
                     "id": "lb_2015"
-                }
+                },
+                {
+                    "link": "https://www.dropbox.com/sh/wt6w6ougu4dxd6x/AADDj5T9BlvIt83QCrtHdhS_a?dl=0",
+                    "title": "2014",
+                    "id": "lb_2014"
+                }                
             ]
         },
         {
             "name": "CFEST",
             "id": "cfest",
             "date": "Spring 2016",
-            "description": "cfest",
+            "description": "Curious about China’s culture? CSA’s CFest will teach you, through a series of fun activities, about the different regions of China. We will have food and prizes, so come and learn about China’s various cultures and lifestyles. ",
             "pics": [
                 {
                     "link": "https://www.dropbox.com/sh/zf9u4hfd1zo6hw0/AACznMg0GM9OzZ24wAvhdgZOa?dl=0",
@@ -74,7 +81,7 @@
             "name": "Basketball Tournament",
             "id": "basketball_tournament",
             "date": "Spring 2016",
-            "description": "words",
+            "description": "CSA’s hosts an intramural basketball tournament every year. Put together a team of 8 and you will placed into a bracket against other teams. Each team will pay a nominal fee and the winning team will be awarded a cash prize. If you can’t put together a team of 8, don’t worry! We will try our best to match you with players who want to play but don’t have a team.",
             "pics": [
                 {
                     "link": "https://www.dropbox.com/sh/z42j7dk43cbikfz/AAAer06VowV_1yILi1ws8iNOa?dl=0",

@@ -1,7 +1,8 @@
 <div class="title">
 <h1>Sign Up!</h1>
 <p>Welcome! Fill out this form and you'll automatically be included in our listserv so you can get all our exciting news and announcements!</p>
-<p>Please select your shirt size when you register. We will soon send out an email telling you when and where you pick up the shirt. Please bring $10(?)! <a href="#">This</a> is what the shirt looks like.</p>
+<p>Please select your shirt size when you register. We will soon send out an email telling you when and where you pick up the shirt. Please bring $10!</p>
+<p>After you register here, please don't forget to sign up on <a href="https://orgsync.com/64457/chapter">OrgSync</a>!</p>
 </div>
 <%= form_for(@registration, :html => {class: "form-horizontal", :id=>"addNew"}) do |f| %>
 	<% if @registration.errors.any? %>
@@ -19,19 +20,19 @@
 	<div class="field form-group">
 		<%= f.label :firstName, 'First Name', :class=>'col-sm-2 control-label' %>
 		<div class="col-sm-10">
-			<%= f.text_field :firstName, :required=>true, :class=>"form-control", :placeholder => 'Jay' %>
+			<%= f.text_field :firstName, :required=>true, :class=>"form-control", :placeholder => 'First Name' %>
 		</div>
 	</div>
 	<div class="field form-group">
 		<%= f.label :lastName, 'Last Name', :class=>'col-sm-2 control-label' %>
 		<div class="col-sm-10">
-			<%= f.text_field :lastName, :class=>"form-control", :placeholder => 'Chou' %>
+			<%= f.text_field :lastName, :class=>"form-control", :placeholder => 'Last Name' %>
 		</div>
 	</div>
 	<div class="field form-group">
 		<%= f.label :email, 'Email', :class=>'col-sm-2 control-label' %>
 		<div class="col-sm-10">
-			<%= f.text_field :email, :required=>true, :class=>"form-control", :placeholder => 'jay@jaychou.com' %>
+			<%= f.text_field :email, :required=>true, :class=>"form-control", :placeholder => 'name@email.com' %>
 		</div>
 	</div>
 	<!-- <div class="form-group row"> -->

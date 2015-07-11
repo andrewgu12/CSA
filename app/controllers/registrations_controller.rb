@@ -16,7 +16,7 @@ class RegistrationsController < ApplicationController
   # GET /registrations/1
   # GET /registrations/1.json
   def show
-  	 # @registration = Registration.friendly.find(params[:id])
+  	 @pageTitle = "register"
   end
 
   # GET /registrations/new
