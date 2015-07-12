@@ -11,7 +11,7 @@ app.config([
      })
   }
 ]);
-app.controller('EventsCtrl', function($scope, $http, $routeParams){
+app.controller('EventsCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
 	var eventID = $routeParams.id;
 	$http.get('../events.json').success(function(data){
 		for(var index = 0; index < data.events.length; index++) {
@@ -24,4 +24,4 @@ app.controller('EventsCtrl', function($scope, $http, $routeParams){
 			}
 		}
 	});
-});
+}]);
