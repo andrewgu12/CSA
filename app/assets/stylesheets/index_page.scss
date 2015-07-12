@@ -49,26 +49,55 @@ nav#indexBar{
 }
 
 div#welcome_intro {
-	width: 80%;
+	max-width: 70%;
+	// width: 0%;
 	margin: 0 auto;
-	margin-top: 9%;
-	text-align: center;
-	h1, h3 {
+	margin-top: 9%;	
+	text-align: left;
+	span {
 		color: #FFF;
 	}
-	h3 {
+	span#welcome {
 		font-size: 40px;
-		margin-bottom: 0;
 		display: none;		
 	}
-	h1 {
-		font-weight: 700;
+	span#csa {
+		// margin-top: -30px;
+		font-weight:700;
 		font-size: 72px;
 		text-decoration: underline;
-		margin-top: 20px;
 		display: none;
 	}
+	// text-align: center;
+	// h1, h3 {
+	// 	color: #FFF;
+	// }
+	// h3 {
+	// 	font-size: 40px;
+	// 	margin-bottom: 0;
+	// 	display: none;	
+	// 	width: 50%;
+	// 	// text-align: left;	
+	// }
+	// h1 {
+	// 	font-weight: 700;
+	// 	font-size: 72px;
+	// 	text-decoration: underline;
+	// 	margin-top: 0px;
+	// 	display: none;
+	// }
 }
+// @media(max-width: 980px) {
+// 	div#welcome_intro {
+// 		text-align: left;
+// 		h3 {
+// 			width: 80%;
+// 		}
+// 		h1 {
+
+// 		}
+// 	}
+// }
 @media(max-width: 768px) {	
 	nav#indexBar {
 		.navbar-right {
@@ -83,6 +112,7 @@ div#welcome_intro {
 				a {
 					color: #FFF;
 					font-size: 18px;
+					font-weight: bold;
 				}
 			}
 		}
@@ -95,11 +125,16 @@ div#welcome_intro {
 		}
 	}
 	div#welcome_intro {
-		text-align: left;
-		h3 {
+		// text-align: left;
+		// width: 80%;
+		// margin-left: 0px; 
+		// padding-right: 20px;
+		max-width: 90%;
+		span#welcome {
 			font-size: 25px;
+			width: 80%;
 		}
-		h1 {
+		span#csa {
 			margin-top: 10px;
 			font-size: 40px;
 		}

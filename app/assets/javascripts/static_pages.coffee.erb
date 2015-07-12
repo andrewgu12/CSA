@@ -3,6 +3,7 @@ ready = ->
 	$("#welcome").delay(300).slideDown(500);
 	$("#csa").delay(800).slideDown(500);
 
+	# $("#welcome").delay(1300).css("display", "none");
 	# home page slideshow
 	$('body#homePage').vegas
 		timer: false,
@@ -14,7 +15,7 @@ ready = ->
 			{src: '<%= asset_path('background_3.jpg')%>'}
 		]
 	$('#calendar').fullCalendar 
-		googleCalendarApiKey: 'AIzaSyCHI8YwUquGBULKNrqULHiYbN-YMtOOmjo'		
+		googleCalendarApiKey: '<%= ENV["GOOGLE_CALENDAR_API_KEY"] %>'		
 		events: 
 			googleCalendarId: '3qeg0ij57jgh6k0crbmccl8q5s@group.calendar.google.com'	
 # turbolinks treats everything like a single page -> compatible with regular page load and click links

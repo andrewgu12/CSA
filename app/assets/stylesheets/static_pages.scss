@@ -181,5 +181,8 @@ form#addNew {
 			// padding-right: 0;
 		}
 	}
-
+	// thank default settings for this.. default was 4 changed to 2 so everything can align
+	input[name="registration[shirtSize]"] {
+		margin-top: 2px;
+	}
 }
