@@ -5,15 +5,22 @@ class StaticPagesController < ApplicationController
 	end
 
 	def about
-		@pageTitle = "about"
+		@page_title = "about"
 	end
 
 	def calendar
-		@pageTitle = "calendar"
+		# @page_title = "calendar"
 	end
 
 	def register
-		@pageTitle = "register"
+		@page_title = "register"
 	end
 
+	def sponsors
+		@page_title = "sponsors"
+	end
+
+	def event
+		@page_title = request.original_url.split('/')[4]
+	end
 end

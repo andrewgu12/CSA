@@ -16,5 +16,4 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require angular-rails-templates
-//= require_tree ./templates
 //= require turbolinks

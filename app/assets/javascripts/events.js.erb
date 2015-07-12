@@ -8,15 +8,10 @@ app.config([
      when('/events/:id', {
         templateUrl: '../templates/eventTemp.html',
         controller: 'EventsCtrl'
-     }).
-     otherwise({
-    	templateUrl: '../templates/eventTemp2.html',
-      	controller: 'EventsCtrl2'
-     });
+     })
   }
 ]);
 app.controller('EventsCtrl', function($scope, $http, $routeParams){
-	// console.log('yo!');
 	var eventID = $routeParams.id;
 	$http.get('../events.json').success(function(data){
 		for(var index = 0; index < data.events.length; index++) {
@@ -29,8 +24,4 @@ app.controller('EventsCtrl', function($scope, $http, $routeParams){
 			}
 		}
 	});
-});
-
-app.controller('EventsCtrl2', function($scope, $http) {
-	console.log('yo2');
 });

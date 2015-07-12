@@ -1,9 +1,3 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
-# $(document).on 'page:load', ->
-	# $("#welcome").slideDown(800);
-
 ready = ->	
 	# index page text slide in
 	$("#welcome").delay(300).slideDown(500);
@@ -19,10 +13,6 @@ ready = ->
 			{src: '<%= asset_path('background_2.jpg')%>'}
 			{src: '<%= asset_path('background_3.jpg')%>'}
 		]
-	# $('#welcome').fitText()
-	# $('#csa').fitText()
-	# $(document).on 'click', '.officerPics img', ->
-	# 	alert 'Yo!'
 	$('#calendar').fullCalendar 
 		googleCalendarApiKey: 'AIzaSyCHI8YwUquGBULKNrqULHiYbN-YMtOOmjo'		
 		events: 

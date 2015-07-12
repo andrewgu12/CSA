@@ -18,7 +18,13 @@
             "id":"concessions",
             "date":"Fall 2015",
             "description": "Each year, CSA will work the concession stands during football games! You will have the opportunity to prepare and fry food, serve customers, and enjoy as much fried food as you want while helping out. Come and join us!",
-            "pics": []
+            "pics": [
+                {
+                    "link": "https://www.dropbox.com/sh/9cm9a6ng8783537/AADNvL7ItAnmBgo4LHRCwFdRa?dl=0",
+                    "title": "2014",
+                    "id": "con_2014"
+                }
+            ]
         },
         {
             "name": "Dumpling Night",
@@ -34,7 +40,7 @@
             ]
         },
         {
-            "name": "Hotpot Night",
+            "name": "Hot Pot Night",
             "id": "hotpot_night",
             "date": "Fall 2015",
             "description": "Come and enjoy some hotpot with CSA! For a nominal fee, you’ll enjoy an assortment of delicious food with a table of people. We will provide the hot pot materials, stove, and even entertainment. You just have to show up and get ready to cook and feast.",

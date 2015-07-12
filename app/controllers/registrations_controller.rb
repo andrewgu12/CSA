@@ -2,27 +2,16 @@ require 'google/api_client'
 require 'google_drive'
 
 class RegistrationsController < ApplicationController
-  before_action :set_registration, only: [:show, :edit, :update, :destroy]
+  before_action :set_registration, only: [:show]
 
- #  # GET /registrations
- #  # GET /registrations.json
- #  def index
-
-	# @registrations = Registration.all
-	# # format.html {redirect_to action: 'new'}
-	# # redirect_to :action =>
- #  end
-
-  # GET /registrations/1
-  # GET /registrations/1.json
   def show
-  	 @pageTitle = "register"
+  	 @page_title = "register"
   end
 
   # GET /registrations/new
   def new
 	@registration = Registration.new
-	@pageTitle = "register"
+	@page_title = "register"
   end
 
   # POST /registrations

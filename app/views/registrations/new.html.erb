@@ -39,8 +39,33 @@
 		<!-- <div class="col-md-6 selectMenu"> -->
 			<div class="field form-group">
 				<%= f.label :shirtSize, 'Shirt Size', :class=>'col-sm-2 control-label' %>
-				<div class="col-sm-10">          
-					<%= f.select :shirtSize, options_for_select([['Small', 'small'], ['Medium', 'medium'], ['Large', 'large'], ['Do not need one', 'none']], selected: :shirtSize), {}, {:class => 'form-control'} %>
+				<div class="col-sm-10 btn-group">
+					<div class="radio">
+						<label for="small">
+							<%=f.radio_button :shirtSize, "Small", :id=>"Small", :checked=>true %>
+							Small
+						</label>           
+					</div>
+					<div class="radio">
+						<label for="medium">
+							<%=f.radio_button :shirtSize, "Medium", :id=>"Medium" %>
+							Medium
+						</label>
+					</div>
+					<div class="radio">
+						<label for="large">
+							<%=f.radio_button :shirtSize, "Large", :id=>"Large" %>
+							Large						
+						</label>
+					</div>
+					<div class="radio">
+						<label for="none">
+							<%=f.radio_button :shirtSize, "none", :id=>"none" %>
+							Don't need one
+						</label>
+					</div>
+					<!--<%= f.select :shirtSize, options_for_select([['Small', 'small'], ['Medium', 'medium'], ['Large', 'large'], ['Do not need one', 'none']], selected: :shirtSize), {}, {:class => 'form-control'} %> -->
+
 				</div>
 			</div>
 		<!-- </div>       -->

@@ -1,11 +1,4 @@
 html {
-
-	/*background: image-url('home_background.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	background-color: transparent;*/
 	min-width: 100%;
 	position: relative;
 	min-height: 100%;
@@ -118,20 +111,11 @@ div#welcome_intro {
 footer {
 	position: absolute;
 	bottom: 0;
-	height: $footerHeight;	
-	// margin-top: 15px;
-		
+	height: $footerHeight;			
 	min-width: 100%;
 	line-height: $footerHeight;
 	p {
 		color: #FFF;
 		padding-left: 10px;
-	}
-	.container {
-		max-width: 960px;
-		margin: 0 auto;	
-		p {
-			color: #FFF;
-		}	
 	}
 }

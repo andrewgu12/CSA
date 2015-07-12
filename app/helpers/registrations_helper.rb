@@ -1,3 +1,0 @@
-
-module RegistrationsHelper
-end
