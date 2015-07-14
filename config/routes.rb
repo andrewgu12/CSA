@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   post '/contact' => 'contact#create'
   
   get '/register' => 'registrations#new'
-  post '/registrations' => 'registrations#create'    
+  post '/registrations' => 'registrations#create'   
+
+  match '/404' => 'errors#file_not_found', via: :all
 end

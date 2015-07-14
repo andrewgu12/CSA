@@ -38,7 +38,7 @@ Rails.application.configure do
   config.serve_static_files = true 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-
+  config.consider_all_requests_local = false
   POSTMARK_API_KEY = "62fe62df-c038-4107-8dd5-f877c9a1a65a"
 
 end

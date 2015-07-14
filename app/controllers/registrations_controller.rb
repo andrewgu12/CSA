@@ -6,6 +6,7 @@ class RegistrationsController < ApplicationController
 
   def show
   	 @page_title = "register"
+
   end
 
   # GET /registrations/new
