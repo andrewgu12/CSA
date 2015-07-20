@@ -5,6 +5,7 @@ class CreateAuxiliary < ActiveRecord::Migration
       t.string :email
       t.string :major
       t.string :expected_graduation
+      t.int
     end
   end
 end
