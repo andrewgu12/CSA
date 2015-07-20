@@ -13,5 +13,9 @@ Rails.application.routes.draw do
   post '/registrations' => 'registrations#create'   
 
   match '/404' => 'errors#file_not_found', via: :all
-end
+  get '/events/*path' => 'event#event'
 
+  get '/ao/index' => 'auxiliaries#index'
+  get '/ao/signup' => 'auxiliaries#new'
+  post '/ao/signup' => 'auxiliaries#create'
+end
