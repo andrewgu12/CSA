@@ -18,4 +18,4 @@ Rails.application.routes.draw do
   get '/ao/index' => 'auxiliaries#index'
   get '/ao/signup' => 'auxiliaries#new'
   post '/ao/signup' => 'auxiliaries#create'
-
+end

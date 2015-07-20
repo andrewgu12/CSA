@@ -2,9 +2,9 @@
 
   <div class="form-group">
 
-    <label class="col-sm-2 control-label">First Name:</label>
+    <label class="col-sm-2 control-label">Full Name:</label>
     <div class="col-sm-10">
-      <%= f.text_field :name, :required => true, :class => "form-control", :id => "name", :placeholder => "First Name" %>
+      <%= f.text_field :name, :required => true, :class => "form-control", :id => "name", :placeholder => "Full Name" %>
     </div>
 
   </div>
@@ -29,7 +29,7 @@
 
   <div class="form-group">
 
-    <label class="col-sm-2 control-label">Expected Semester of Graduation:</label>
+    <label class="col-sm-2 control-dlabel">Expected Semester of Graduation:</label>
     <div class="col-sm-10">
       <%= f.text_field :expected_graduation, :required => true, :class => "form-control", :id => "email", :placeholder => "i.e. Winter 2015" %>
     </div>
@@ -41,7 +41,7 @@
 
     <div class="col-sm-offset-2 col-sm-10">
       <%= button_tag(type: 'submit', class: "btn btn-red btn-default") do %>
-      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send!
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Submit!
       <% end %>
     </div>
 
