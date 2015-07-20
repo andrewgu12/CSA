@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post '/registrations' => 'registrations#create'
 
   match '/404' => 'errors#file_not_found', via: :all
+
   match '/500' => 'errors#something_went_wrong', via: :all
   match '/422' => 'errors#something_went_wrong', via: :all
   get '/ao/index' => 'auxiliaries#index'
