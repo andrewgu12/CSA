@@ -4,6 +4,7 @@ class AuxiliariesController < ApplicationController
   end
 
   def create
+    binding.remote_pry
     @auxiliary = Auxiliary.new(auxiliary_params)
     AuxiliaryMailer.application(@auxiliary).deliver
   end
