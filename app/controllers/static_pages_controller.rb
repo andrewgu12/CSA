@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 	layout "application"
 	def home
-		render :layout => 'index'		
+		render :layout => 'index'
 	end
 
 	def about
