@@ -1,5 +1,5 @@
 class Rename < ActiveRecord::Migration
   def change
-      rename_table :register, :registers
+      rename_table :registrations, :registers
   end
 end
