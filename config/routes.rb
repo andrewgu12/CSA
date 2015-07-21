@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   get '/contact' => 'contact#new'
   post '/contact' => 'contact#create'
 
-  get '/register' => 'registrations#new'
-  post '/registrations' => 'registrations#create'
+  get '/register' => 'registers#new'
+  post '/register' => 'registers#create'
 
   get '/ao/index' => 'auxiliaries#index'
   get '/ao/signup' => 'auxiliaries#new'
@@ -20,6 +20,12 @@ Rails.application.routes.draw do
 
   get '/admin' => 'admin#index'
   post '/admin' => 'admin#login'
+  get '/admin/events/all' => 'admin#view_events'
+  get '/admin/events/:id' => 'admin#view_event'
+  get '/admin/events/:id/edit' => 'admin#edit_event'
+  post '/admin/events/:id/edit' => 'admin#save_edited_event'
+  get '/admin/events/add' => 'admin#add_event'
+  post '/admin/events/add' => 'admin#create_event'
 
   match '/404' => 'errors#file_not_found', via: :all
 end

@@ -1,10 +1,26 @@
 class AdminController < ApplicationController
     layout "admin_layout"
     def index
-        @hide_menu = false
+        @hide_menu = true
     end
 
     def login
+    end
+
+    def add_events
+
+    end
+
+    def view_events
+    end
+
+    def view_event
+    end
+
+    def edit_event
+    end
+
+    def save_edited_event
     end
 
     private

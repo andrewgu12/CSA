@@ -4,13 +4,13 @@
 <p>Please select your shirt size when you register. We will soon send out an email telling you when and where you pick up the shirt. Please bring $10!</p>
 <p>After you register here, please don't forget to sign up on <a href="https://orgsync.com/64457/chapter">OrgSync</a>!</p>
 </div>
-<%= form_for(@registration, :html => {class: "form-horizontal", :id=>"addNew"}) do |f| %>
-	<% if @registration.errors.any? %>
+<%= form_for(:register, :html => {class: "form-horizontal", :id=>"addNew"}) do |f| %>
+	<% if @register.errors.any? %>
 		<div id="error_explanation">
-			<h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+			<h2><%= pluralize(@register.errors.count, "error") %> prohibited this register from being saved:</h2>
 
 			<ul>
-			<% @registration.errors.full_messages.each do |message| %>
+			<% @register.errors.full_messages.each do |message| %>
 				<li><%= message %></li>
 			<% end %>
 			</ul>
@@ -44,7 +44,7 @@
 						<label for="small">
 							<%=f.radio_button :shirtSize, "Small", :id=>"Small", :checked=>true %>
 							Small
-						</label>           
+						</label>
 					</div>
 					<div class="radio">
 						<label for="medium">
@@ -55,7 +55,7 @@
 					<div class="radio">
 						<label for="large">
 							<%=f.radio_button :shirtSize, "Large", :id=>"Large" %>
-							Large						
+							Large
 						</label>
 					</div>
 					<div class="radio">
@@ -75,7 +75,7 @@
 				<div class="col-sm-10">
 					<!-- <%= f.text_field :year %>-->
 					<%= f.select :year, options_for_select([['Freshmen', 'freshmen'], ['Sophomore', 'sophomore'], ['Junior', 'junior'], ['Senior', 'senior'], ['Super Senior', 'supersenior']], selected: :year),{}, {:class => 'form-control'}  %>
-				</div>  
+				</div>
 			</div>
 		<!-- </div> -->
 	<!-- </div> -->
@@ -88,5 +88,3 @@
 	    </div>
   	</div>
 <% end %>
-
-
