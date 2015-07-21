@@ -15,5 +15,8 @@
 # Ignore database setup
 /config/database.yml
 
+#Ignore API Key files
+/config/environment_variables.yml
+
 #ignore Google API .json file
 /config/UMDCSA-1a4e30ad76a2.json
