@@ -14,12 +14,12 @@ Rails.application.routes.draw do
   get '/register' => 'registrations#new'
   post '/registrations' => 'registrations#create'
 
-  match '/404' => 'errors#file_not_found', via: :all
-
   get '/ao/index' => 'auxiliaries#index'
   get '/ao/signup' => 'auxiliaries#new'
   post '/ao/signup' => 'auxiliaries#create'
 
   get '/admin' => 'admin#index'
   post '/admin' => 'admin#login'
+
+  match '/404' => 'errors#file_not_found', via: :all
 end
