@@ -13,7 +13,6 @@ Rails.application.routes.draw do
 
   get '/register' => 'registrations#new'
   post '/registrations' => 'registrations#create'
-
   get '/ao/index' => 'auxiliaries#index'
   get '/ao/signup' => 'auxiliaries#new'
   post '/ao/signup' => 'auxiliaries#create'
