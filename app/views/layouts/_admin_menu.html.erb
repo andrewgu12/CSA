@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuBar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <%= image_tag('logo.png', size: '40x40') %>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="menuBar">
+    <% if !defined? @hide_menu %>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">AO Management</a></li>
+          <li><a href="#">Link 2</a></li>
+      </ul>
+    <% end %>
+    </div><!-- /.navbar-collapse -->
+ </div>
