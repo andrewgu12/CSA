@@ -1,7 +1,7 @@
 require 'google/api_client'
 require 'google_drive'
 
-class RegistersController < ApplicationController  
+class RegistersController < ApplicationController
   def new
 	@register = Register.new
 	@page_title = "register"

@@ -24,10 +24,11 @@ ActiveRecord::Schema.define(version: 20150721221129) do
   end
 
   create_table "auxiliaries", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "major"
-    t.string "expected_graduation"
+    t.string  "name"
+    t.string  "email"
+    t.string  "major"
+    t.string  "expected_graduation"
+    t.integer "approved"
   end
 
   create_table "registers", force: :cascade do |t|
