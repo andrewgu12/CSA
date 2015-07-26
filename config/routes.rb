@@ -22,12 +22,12 @@ Rails.application.routes.draw do
   get '/admin/ao/dashboard' => "admin#ao_dashboard"
   get '/admin' => 'admin#index'
   post '/admin' => 'admin#login'
-  get '/admin/events/all' => 'admin#view_events'
-  get '/admin/events/:id' => 'admin#view_event'
-  get '/admin/events/:id/edit' => 'admin#edit_event'
-  post '/admin/events/:id/edit' => 'admin#save_edited_event'
-  get '/admin/events/add' => 'admin#add_event'
-  post '/admin/events/add' => 'admin#create_event'
+  # get '/admin/events/all' => 'admin#view_events'
+  # get '/admin/events/:id' => 'admin#view_event'
+  # get '/admin/events/:id/edit' => 'admin#edit_event'
+  # post '/admin/events/:id/edit' => 'admin#save_edited_event'
+  get '/admin/events/add' => 'admin#event_new'
+  post '/admin/events/add' => 'admin#event_create'
 
   match '/404' => 'errors#file_not_found', via: :all
 end

@@ -11,30 +11,19 @@ class AdminController < ApplicationController
     end
 
     def index
-        @hide_menu = true
+      @hide_menu = true
     end
 
-    def login
+
+    def event_new
     end
-
-    def add_events
-
+    def event_create
+      @event = Event.new(event_params)
+      @event.event_id = "blah"
+      @event.save
     end
-
-    def view_events
-    end
-
-    def view_event
-    end
-
-    def edit_event
-    end
-
-    def save_edited_event
-    end
-
     private
-    
+
     def admin_params
         params.require(:admin).permit(:email, :password)
     end
@@ -43,4 +32,7 @@ class AdminController < ApplicationController
         @auxiliaries = Auxiliary.all
     end
 
+    def event_params
+      params.require(:event).permit(:name, :date, :description, :pictures)
+    end
 end
