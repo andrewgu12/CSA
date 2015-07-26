@@ -14,12 +14,19 @@ class AdminController < ApplicationController
       @hide_menu = true
     end
 
-
+    def events_view
+      @events = Event.all
+    end
+    def event_view
+      puts "Params: #{params[:id]}"
+      @event = Event.find_by(event_id: params[:id])
+      print "Event: #{@event.name}"
+    end
     def event_new
     end
     def event_create
       @event = Event.new(event_params)
-      @event.event_id = "blah"
+      @event.event_id = @event.name.downcase.gsub(/\s/, "_")
       @event.save
     end
     private
@@ -33,6 +40,6 @@ class AdminController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:name, :date, :description, :pictures)
+      params.require(:event).permit(:name, :date, :description)
     end
 end
