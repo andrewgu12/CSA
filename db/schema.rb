@@ -54,6 +54,15 @@ ActiveRecord::Schema.define(version: 20150730190754) do
     t.string   "event_id"
   end
 
+  create_table "pictures", force: :cascade do |t|
+    t.string   "event_id"
+    t.string   "name"
+    t.integer  "year"
+    t.string   "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "registers", force: :cascade do |t|
     t.string   "firstName"
     t.string   "lastName"

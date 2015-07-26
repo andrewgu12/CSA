@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_id: MyString
+  name: MyString
+  year: 1
+  link: MyString
+
+two:
+  event_id: MyString
+  name: MyString
+  year: 1
+  link: MyString
