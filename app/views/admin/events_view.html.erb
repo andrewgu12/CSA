@@ -1,6 +1,7 @@
 <% @events.each do |event| %>
   <p>
     <%= event.name %>
-    <%= link_to "Edit", "/admin/events/#{event.event_id}" %> 
+    <%= link_to "View", "/admin/events/#{event.event_id}" %>
+
   </p>
 <% end %>

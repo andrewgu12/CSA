@@ -1,0 +1,32 @@
+<%= form_for(:picture, :html=>{:class=>"form-horizontal"}) do |f| %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Event Name:</label>
+    <div class="col-sm-10">
+      <%= f.select(:event_id, options_from_collection_for_select(Event.all, :id, :name), {}, {:class=>"form-control"}) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Year: </label>
+    <div class="col-sm-10">
+      <%= f.text_field :year, :class=>"form-control", :id=>"year", :placeholder=>"2015" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Link: </label>
+    <div class="col-sm-10">
+      <%= f.text_field :link, :class=>"form-control", :id=>"link", :placeholder=>"http://dropbox.com/abc123" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= button_tag(type: 'submit', class: "btn btn-red btn-default") do %>
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Submit!
+      <% end %>
+    </div>
+
+  </div>
+<% end %>

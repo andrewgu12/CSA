@@ -25,5 +25,4 @@
   </div>
 </div>
 <%= link_to "Edit", "/admin/events/#{@event.event_id}/edit" %>
-<!-- <%= link_to "Delete", "/admin/events/#{@event.event_id}/delete" %> -->
-<%= link_to "Delete", url_for(action: :event_delete, id: @event.event_id), method: :event_delete, data: {confirm: "Are you sure?"} %>
+<%= link_to "Delete", "/admin/events/#{@event.event_id}/delete" %>
