@@ -30,6 +30,11 @@
           <li><a href="/contact">Contact</a></li>
           <li><a href="/sponsors">Sponsors</a></li>
           <li><a href="/register">Sign up</a></li>
+          <% if admin_signed_in? %>
+            <li><%= link_to "Admin Logout", destroy_admin_session_path, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to "Admin Login", new_admin_session_path, :method => :get %></li>
+          <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->
    </div>
