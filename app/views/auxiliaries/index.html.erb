@@ -1,0 +1,16 @@
+<div id = "ao-table">
+  <table class = "table table-bordered" >
+    <tr>
+      <th class="col-md-3">Name</th>
+      <th class="col-md-3">Major</th>
+      <th class="col-md-3">Expected Graduation</th>
+    </tr>
+    <% @auxiliaries.each do |auxiliary| %>
+      <tr>
+        <td class="col-md-3">auxiliary.name</td>
+        <td class="col-md-3">auxiliary.major</td>
+        <td class="col-md-3">auxiliary.expected_graduation</td>
+      </tr>
+    <% end %>
+  </table>
+</div>
