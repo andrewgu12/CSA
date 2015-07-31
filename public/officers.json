@@ -13,7 +13,7 @@
 		"role": "Co-President",
         "major": "Computer Science",        
 		"class": "Spring 2018",		
-        "funFact": "",
+        "funFact": "One of my favorite hobbies is cooking.",
 		"id" : "matt"
     },
     {
@@ -21,7 +21,7 @@
     	"role": "VP Administration & Fundraising Chair",
         "major": "Public Relations",        
     	"class": "Spring 2016",    	
-        "funFact": "",
+        "funFact": "I tend to end up on the weird parts of YouTube",
     	"id" : "angela"
     },
     {
@@ -29,7 +29,7 @@
     	"role": "VP Finance",
         "major": "Accounting",        
     	"class": "Spring 2018",    	
-        "funFact": "",
+        "funFact": "I love to listen to Maroon 5",
     	"id" : "sophia"
     },
     {
@@ -53,7 +53,7 @@
     	"role": "AO Representative",
         "major": "Aerospace Engineering",        
     	"class": "Spring 2018",    	
-        "funFact": "",
+        "funFact": "I write satire pieces.",
     	"id" : "john"
     },
     {
