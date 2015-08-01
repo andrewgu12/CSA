@@ -1,6 +1,7 @@
 class AuxiliariesController < ApplicationController
 
   def new
+    @page_title = "auxiliary"
   end
 
   def create
@@ -9,7 +10,8 @@ class AuxiliariesController < ApplicationController
   end
 
   def index
-    @auxiliaries = Auxiliary.all? { |e|  }
+    @page_title = "auxiliary"
+    @auxiliaries = Auxiliary.all
   end
 
   private
