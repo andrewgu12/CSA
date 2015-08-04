@@ -15,10 +15,11 @@ Rails.application.routes.draw do
   get '/register' => 'registers#new'
   post '/register' => 'registers#create'
 
-  get '/ao/index' => 'auxiliaries#index'
-  get '/ao/signup' => 'auxiliaries#new'
-  post '/ao/signup' => 'auxiliaries#create'
+  resources :auxiliaries, :path => "/ao" do
+    post 'accept', on: :member
+  end
 
+  get '/admin/ao/dashboard' => "admin#ao_dashboard"
   get '/admin' => 'admin#index'
   post '/admin' => 'admin#login'
   get '/admin/events/all' => 'admin#view_events'

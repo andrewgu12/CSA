@@ -14,6 +14,18 @@ class AuxiliariesController < ApplicationController
     @auxiliaries = Auxiliary.where(:approved => 1)
   end
 
+  def destroy
+    Auxiliary.find(params[:id]).remove
+    redirect_to admin_ao_dashboard_path
+  end
+
+  def accept
+    @auxiliary = Auxiliary.find(params[:id])
+    @auxiliary.approved = 1
+    @auxiliary.save
+    redirect_to admin_ao_dashboard_path
+  end
+
   private
 
   def auxiliary_params

@@ -1,0 +1,27 @@
+<div id = "ao-table" style="overflow-y: auto; height: 75vh;">
+
+  <table class = "table table-bordered" >
+    <tr class = "row-fluid">
+      <th class="col-md-2 offset-1">Name</th>
+      <th class="col-md-2">Major</th>
+      <th class="col-md-2">Expected Graduation</th>
+      <th class="col-md-2">Approved?</th>
+      
+    </tr>
+    <% @auxiliaries.each do |auxiliary| %>
+      <tr class = "row-fluid">
+        <td class="col-md-2"><%= auxiliary.name %></td>
+        <td class="col-md-2"><%= auxiliary.major %></td>
+        <td class="col-md-2"><%= auxiliary.expected_graduation %></td>
+        <td class="col-md-2">
+          <% if auxiliary.approved == 0 %>
+            <%= link_to "Approve AO", accept_auxiliary_path(auxiliary) , :method => :post %>
+          <% else %>
+            Approved
+          <% end %>
+        </td>
+        <td class="col-md-2"><%= link_to "Delete", auxiliary_path(auxiliary), :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
