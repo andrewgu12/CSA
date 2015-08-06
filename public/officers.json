@@ -1,44 +1,44 @@
 {
   "officers": [
     {
-		"name": "Alice Liu",
-		"role": "Co-President",
-        "major": "Accounting & Finance",        
-		"class": "Spring 2016/Winter 2016",		
-        "funFact": "I'm ambidextrous.",
-		"id":"alice"
+      "name": "Alice Liu",
+      "role": "Co-President",
+      "major": "Accounting & Finance",
+      "class": "Spring 2016/Winter 2016",
+      "funFact": "I'm ambidextrous.",
+      "id":"alice"
     },
     {
-    	"name": "Matthew Jiang",
-		"role": "Co-President",
-        "major": "Computer Science",        
-		"class": "Spring 2018",		
-        "funFact": "One of my favorite hobbies is cooking.",
-		"id" : "matt"
+      "name": "Matthew Jiang",
+      "role": "Co-President",
+      "major": "Computer Science",
+      "class": "Spring 2018",
+      "funFact": "One of my favorite hobbies is cooking.",
+      "id" : "matt"
     },
     {
-    	"name": "Angela Kang",
-    	"role": "VP Administration & Fundraising Chair",
-        "major": "Public Relations",        
-    	"class": "Spring 2016",    	
-        "funFact": "I tend to end up on the weird parts of YouTube",
-    	"id" : "angela"
+      "name": "Angela Kang",
+      "role": "VP Administration & Fundraising Chair",
+      "major": "Public Relations",
+      "class": "Spring 2016",
+      "funFact": "I tend to end up on the weird parts of YouTube",
+      "id" : "angela"
     },
     {
-    	"name": "Sophia Peng",
-    	"role": "VP Finance",
-        "major": "Accounting",        
-    	"class": "Spring 2018",    	
-        "funFact": "I love to listen to Maroon 5",
-    	"id" : "sophia"
+      "name": "Sophia Peng",
+      "role": "VP Finance",
+      "major": "Accounting",
+      "class": "Spring 2018",
+      "funFact": "I love to listen to Maroon 5",
+      "id" : "sophia"
     },
     {
-    	"name": "Emily Liang",
-    	"role": "VP External",
-        "major": "Physiology & Neurobiology",        
-    	"class": "",    	
-        "funFact": "I'm a bubble tea connoisseur.",
-    	"id":"emily"
+      "name": "Emily Liang",
+      "role": "VP External",
+      "major": "Physiology & Neurobiology",
+      "class": "",
+      "funFact": "I'm a bubble tea connoisseur.",
+      "id":"emily"
     },
     {
     	"name": "Valery Leng",
@@ -49,12 +49,12 @@
     	"id" : "valery"
     },
     {
-    	"name": "John Soong",
-    	"role": "AO Representative",
-        "major": "Aerospace Engineering",        
-    	"class": "Spring 2018",    	
-        "funFact": "I write satire pieces.",
-    	"id" : "john"
+      "name": "John Soong",
+      "role": "AO Representative",
+      "major": "Aerospace Engineering",
+      "class": "Spring 2018",
+      "funFact": "I write satire pieces.",
+      "id" : "john"
     },
     {
     	"name": "Andrew Gu",
@@ -65,12 +65,12 @@
     	"id" : "andrew"
     },
     {
-    	"name": "Kevin Chan",
-    	"role": "Historian",
-        "major": "Accounting & Supply Chain",        
-    	"class": "Spring 2017",    	
-        "funFact": "I DJ",
-    	"id" : "kevin"
+      "name": "Kevin Chan",
+      "role": "Historian",
+      "major": "Accounting & Supply Chain",
+      "class": "Spring 2017",
+      "funFact": "I DJ",
+      "id" : "kevin"
     }
   ]
 }
