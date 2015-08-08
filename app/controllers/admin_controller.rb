@@ -53,6 +53,9 @@ class AdminController < ApplicationController
     def pictures_create
       @picture = Picture.new(picture_params)
     end
+
+
+    
     private
 
     def admin_params
