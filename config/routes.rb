@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins, :skip => [:registrations]
+  devise_for :admin, :skip => [:registrations]
   resources :registrations
 
   root 'static_pages#home'
@@ -20,8 +20,10 @@ Rails.application.routes.draw do
   end
 
   get '/admin/ao/dashboard' => "admin#ao_dashboard"
-  get '/admin' => 'admin#index'
-  post '/admin' => 'admin#login'
+  devise_scope :admin do 
+    get '/admin' => 'devise/sessions#new'
+  end
+  # post '/admin' => 'admin#login'
   # get '/admin/events/:id/edit' => 'admin#edit_event'
   # post '/admin/events/:id/edit' => 'admin#save_edited_event'
   get '/admin/events/add' => 'admin#event_new'

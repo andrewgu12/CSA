@@ -1,0 +1,35 @@
+<h2>Admin Login</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), :html=>{:class=>"form-horizontal"}) do |f| %>
+  <div class="field form-group">
+    <%= f.label :email, :class=>"control-label col-sm-2" %>
+    <div class="col-sm-10">
+      <%= f.email_field :email, autofocus: true, :required=>true, :class=>"form-control", :placeholder=>"email@email.com" %>
+    </div>
+  </div>
+
+  <div class="field form-group">
+    <%= f.label :password, :class=>"control-label col-sm-2" %>
+    <div class="col-sm-10">
+      <%= f.password_field :password, autocomplete: "off", :required=>true, :class=>"form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">  
+      <% if devise_mapping.rememberable? -%>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= button_tag(type: 'submit', class: "btn btn-red btn-default") do %>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Submit!
+        <% end %>
+      </div>
+  </div>
+<% end %>
+
+
+<%= render "devise/shared/links" %>
