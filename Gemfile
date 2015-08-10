@@ -19,6 +19,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'materialize-sass'
+gem 'material_icons'
 gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
 

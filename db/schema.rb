@@ -44,6 +44,25 @@ ActiveRecord::Schema.define(version: 20150730190754) do
     t.integer "approved"
   end
 
+  create_table "events", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "date"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "event_id"
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.string   "event_id"
+    t.string   "name"
+    t.integer  "year"
+    t.string   "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "picture_id"
+  end
+
   create_table "registers", force: :cascade do |t|
     t.string   "firstName"
     t.string   "lastName"

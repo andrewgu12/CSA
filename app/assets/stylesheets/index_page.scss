@@ -10,43 +10,54 @@ body {
 	padding-bottom: $footerHeight;
 	// overflow-x: hidden;
 }
+$menuHeight: 60px;
 nav#indexBar{
+	background-color: #252525 !important;
+	height: $menuHeight;
+	line-height: $menuHeight;
+	.brand-logo {		
+		margin-left: 20px;
+		img {
+			margin-bottom: 10px;
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a.button-collapse:hover {
+		color: #D8DEDD;
+	}
 	li{
 		a {			
-			font-size: 24px;
+			font-size: 20px;
 			color: #FFFFFF;
 			// font-weight: bold;
 		}
 		a:hover {
-			color: #FFF;
-			text-decoration: underline;
-			transition: text-decoration 1s;
+			color: #7C7C7C;				
 		}
 		a:visited {
 			color: #FFF;
 		}		
 	}
-	ul.dropdown-menu {
-		li {
-			a {
-				color: #343434;
-				font-size: 18px;				
-			}
-			a:hover {
-				background: #101010;
-				color: #FFF;
-			}
-		}
+	ul#regular-nav {
+		margin-right: 20px;
+	}
+	// ul.dropdown-menu {
+	// 	li {
+	// 		a {
+	// 			color: #343434;
+	// 			font-size: 18px;				
+	// 		}
+	// 		a:hover {
+	// 			background: #101010;
+	// 			color: #FFF;
+	// 		}
+	// 	}
 		
-	}
+	// }
 }
-.navbar-brand {
-	padding-top: 10px;
-	img {
-		height: 60px;
-		width: 60px;
-	}
-}
+
 
 div#welcome_intro {
 	max-width: 70%;
