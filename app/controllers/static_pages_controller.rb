@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def sponsors
-		@page_title = "sponsors"
+		# @page_title = "sponsors"
 	end
 
 	def event

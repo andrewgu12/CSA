@@ -5,15 +5,15 @@ ready = ->
 
 	# $("#welcome").delay(1300).css("display", "none");
 	# home page slideshow
-	$('body#homePage').vegas
-		timer: false,
-		transitionDuration: 500,
-		# autoplay: false,
-		slides: [
-			{src: '<%= asset_path('home_background.jpg')%>'}
-			{src: '<%= asset_path('background_2.jpg')%>'}
-			{src: '<%= asset_path('background_3.jpg')%>'}
-		]
+	# $('body#homePage').vegas
+	# 	timer: false,
+	# 	transitionDuration: 500,
+	# 	# autoplay: false,
+	# 	slides: [
+	# 		{src: '<%= asset_path('home_background.jpg')%>'}
+	# 		{src: '<%= asset_path('background_2.jpg')%>'}
+	# 		{src: '<%= asset_path('background_3.jpg')%>'}
+	# 	]
 	$('#calendar').fullCalendar 
 		googleCalendarApiKey: '<%= ENV["GOOGLE_CALENDAR_API_KEY"] %>'		
 		events: 
