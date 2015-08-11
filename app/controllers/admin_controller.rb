@@ -1,9 +1,7 @@
 class AdminController < ApplicationController
     before_filter :authenticate_admin!
     layout "admin_layout"
-    def after_sign_in_path_for(resource)
-        admin_ao_dashboard_path
-    end
+
     def ao_dashboard
         get_auxiliary
     end
@@ -59,7 +57,12 @@ class AdminController < ApplicationController
 
     
     private
-
+    def after_sign_in_path_for(resource)
+      admin_ao_dashboard_path
+    end
+    def after_sign_out_path_for(resource)
+      new_admin_session_path
+    end
     def admin_params
         params.require(:admin).permit(:email, :password)
     end
