@@ -9,15 +9,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body id="homePage">
-<nav id="indexBar">
-	<%= render 'layouts/menu' %>
-</nav>
+<%= render 'layouts/menu' %>
 <div class="container">
 <%= yield %>
 </div>
-<footer class="footer left">	
+<!-- <footer class="footer left">	
 	<p>Photo by Chester Lam</p>	
-</footer>
+</footer> -->
 <%= render 'layouts/footer' %>
 </body>
 </html>

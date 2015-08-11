@@ -6,30 +6,31 @@
   <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'vendor/mondernizr' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-inverse" id="otherPagesBar">
-    	<%= render 'layouts/menu' %>
+      <%= render 'layouts/menu' %>
     </nav>
     <div class="container-fluid" id="bodyContent">
-    	<%= if defined? @page_title 		
-    			content_tag :div, :class => "jumbotron" do
-    				 image_tag("covers/#{@page_title}.jpg",:class => "img-responsive")
-    			end
-    	 	end
-    	 %>
-    	<div id="content">
-    		<%= yield %>
-    	</div>
+      <%= if defined? @page_title     
+          content_tag :div, :class => "jumbotron" do
+             image_tag("covers/#{@page_title}.jpg",:class => "img-responsive")
+          end
+        end
+       %>
+      <div id="content">
+        <%= yield %>
+      </div>
     </div>
     <footer class="footer">
-    	<div class="container">
-    		<p class="text-muted">
-    			<span id="copyright">&copy; UMD Chinese Student Association 2015-2016</span> |
-    				<span id="social_media"><a href="https://www.facebook.com/UMCPCSA"><i class="fa fa-lg fa-facebook-official"></i></a><a href="https://twitter.com/umcpcsa"><i class="fa fa-lg fa-twitter-square"></i></a><a href="https://instagram.com/umcpcsa/"><i class="fa fa-lg fa-instagram"></i></a></span>
-    		</p>
-    	</div>
+      <div class="container">
+        <p class="text-muted">
+          <span id="copyright">&copy; UMD Chinese Student Association 2015-2016</span> |
+            <span id="social_media"><a href="https://www.facebook.com/UMCPCSA"><i class="fa fa-lg fa-facebook-official"></i></a><a href="https://twitter.com/umcpcsa"><i class="fa fa-lg fa-twitter-square"></i></a><a href="https://instagram.com/umcpcsa/"><i class="fa fa-lg fa-instagram"></i></a></span>
+        </p>
+      </div>
     </footer>
 <%= render 'layouts/footer' %>
 </body>
