@@ -1,7 +1,9 @@
 class AdminController < ApplicationController
     before_filter :authenticate_admin!
     layout "admin_layout"
-
+    def after_sign_in_path_for(resource)
+        admin_ao_dashboard_path
+    end
     def ao_dashboard
         get_auxiliary
     end
