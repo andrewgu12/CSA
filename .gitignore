@@ -20,3 +20,6 @@
 
 #ignore Google API .json file
 /config/UMDCSA-1a4e30ad76a2.json
+
+#ignore assets folder
+/public/assets/*
