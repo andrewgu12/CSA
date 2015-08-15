@@ -8,7 +8,7 @@ class ContactMailer < ActionMailer::Base
       :subject => email_subject(contact),
       :to => receiver,
       :track_opens => "true"
-    )
+  )
   end
 
   private
