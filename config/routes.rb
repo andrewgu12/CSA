@@ -15,8 +15,9 @@ Rails.application.routes.draw do
   get '/register' => 'registers#new'
   post '/register' => 'registers#create'
 
-  resources :auxiliaries, :path => "/ao" do
-    post 'accept', on: :member
+  post '/ao/new' => 'auxiliaries#create'
+  resources :auxiliaries, :path => "/ao" do        
+    post 'accept', on: :member    
   end
 
   get '/admin/ao/dashboard' => "admin#ao_dashboard"

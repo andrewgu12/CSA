@@ -14,7 +14,8 @@
     <div class="collapse navbar-collapse" id="menuBar">
     <% if !defined? @hide_menu %>
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">AO Management</a></li>
+          <li><%= link_to "AO Management", admin_ao_dashboard_path %></li>
+          <!-- <li><a href="/admin/d">AO Management</a></li> -->
           <li><a href="/admin/events/all">Events</a></li>
           <li><%= link_to "Admin Logout", destroy_admin_session_path, :method => :delete %></li>
           <!-- <li class="dropdown">

@@ -10,7 +10,9 @@
     </head>
     <body>
         <nav class="navbar navbar-default navbar-inverse" id="otherPagesBar">
-            <%=  render 'layouts/admin_menu' %>
+            <% if @hide_menu.nil? %>
+                <%=  render 'layouts/admin_menu' %>
+            <% end %>
         </nav>
         <div class="container-fluid" id="bodyContent">
             <div id="content">

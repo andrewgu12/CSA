@@ -18,7 +18,7 @@ class AuxiliaryMailer < ActionMailer::Base
     # Set receiving email
     case Rails.env
       when "development"
-        "matthewljiang@gmail.com"
+        "andrew.m.gu@gmail.com"
       when "production"
         "csacollegepark@gmail.com"
     end
