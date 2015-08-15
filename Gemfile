@@ -43,13 +43,14 @@ gem 'angular-rails-templates'
 # gem 'capistrano-rails', group: :development
 
 
-group :development, :test do
-  gem 'byebug'
+group :development, :test do	
 
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+	gem 'byebug'
 
-  gem 'pry-rails'
-  gem 'pry-remote'
+	gem 'web-console', '~> 2.0'
+	gem 'spring'
+
+	gem 'pry-rails'
+	gem 'pry-remote'
 
 end

@@ -3,13 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @media(max-width: 768px) {
+
 	div#content {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	div.officer, div.photoSet {
 		img {
 			margin-left: 15px;
+		}
+		img: hover {
+			opacity: 1;
 		}
 	}
 }
@@ -38,6 +42,7 @@ div.navbar-header {
 	padding-top: 5px;
 	padding-bottom: 0;	
 }
+
 nav#otherPagesBar {
 	
 	margin-bottom: 0;
@@ -50,7 +55,10 @@ nav#otherPagesBar {
 			color: #000;
 			transition: color 1s;
 		}
-	}
+	}	
+}
+div.collapse.navbar-collapse.in ul{
+	padding-left: 10px;
 }
 div.container-fluid {
 	padding-left: 0;
@@ -70,7 +78,7 @@ div.jumbotron {
 }
 
 div#content {
-	max-width: 930px;
+	max-width: 960px;
 	margin: 0 auto;
 	padding-right: 5px;
 	padding-left: 5px;
@@ -80,6 +88,16 @@ div#content {
 	}
 	label.control-label {
 		text-align: left;
+	}
+	div.photoSet {
+		img:hover {
+			opacity: 0.6;
+			-webkit-transition: opacity 0.5s;
+			   -moz-transition: opacity 0.5s;
+			    -ms-transition: opacity 0.5s;
+			     -o-transition: opacity 0.5s;
+			        transition: opacity 0.5s;
+		}
 	}
 	div#officersPage {
 		
@@ -94,6 +112,14 @@ div#content {
 					margin-right: 5px;
 					cursor: move;
 					box-shadow: 1px 1px 1px #D5D5D5;
+				}
+				img:hover {
+					opacity: 0.6;
+					-webkit-transition: opacity 0.5s;
+					   -moz-transition: opacity 0.5s;
+					    -ms-transition: opacity 0.5s;
+					     -o-transition: opacity 0.5s;
+					        transition: opacity 0.5s;
 				}
 				div.description {
 					display: none;
