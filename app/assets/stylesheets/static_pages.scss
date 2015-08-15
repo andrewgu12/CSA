@@ -42,7 +42,11 @@ div.navbar-header {
 	padding-top: 5px;
 	padding-bottom: 0;	
 }
-
+@media(max-width: 700px) {
+	span#credit {
+		display: none;
+	}
+}
 nav#otherPagesBar {
 	
 	margin-bottom: 0;
