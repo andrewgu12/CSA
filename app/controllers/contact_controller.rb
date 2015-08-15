@@ -1,7 +1,7 @@
 class ContactController < ApplicationController
   
   def new
-    @page_title = "contact"
+    @page_title = "contact_us"
   end
 
   def create

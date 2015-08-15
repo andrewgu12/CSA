@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def about
-		@page_title = "about"
+		@page_title = "about_us"
 	end
 
 	def calendar
