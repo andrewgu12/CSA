@@ -103,6 +103,20 @@ div#content {
 			        transition: opacity 0.5s;
 		}
 	}
+	span.small_title {
+		font-size: 16px;
+	}
+	div#verizon_logo {
+		img {
+				height: 114px;	
+				margin: 0 auto;
+			}		
+	}
+	@media(min-width: 992px) {
+		div#verizon_logo {
+			margin-top: 15%;			
+		}
+	}
 	div#officersPage {
 		
 		// margin: 0 auto;
