@@ -124,6 +124,8 @@ div#content {
 		
 		// margin: 0 auto;
 		div#officerPics {
+			max-width: 750px;
+			margin: 0 auto;
 			div.officer {
 				display: inline;
 				img {

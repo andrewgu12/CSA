@@ -21,7 +21,7 @@
       "role": "VP Administration & Fundraising Chair",
       "major": "Public Relations",
       "class": "Spring 2016",
-      "funFact": "I tend to end up on the weird parts of YouTube",
+      "funFact": "I tend to end up on the weird parts of YouTube.",
       "id" : "angela"
     },
     {
@@ -29,7 +29,7 @@
       "role": "VP Finance",
       "major": "Accounting",
       "class": "Spring 2018",
-      "funFact": "I love to listen to Maroon 5",
+      "funFact": "I'm obsessed with Hong Kong music from the last century.",
       "id" : "sophia"
     },
     {
@@ -69,8 +69,16 @@
       "role": "Historian",
       "major": "Accounting & Supply Chain",
       "class": "Spring 2017",
-      "funFact": "I DJ",
+      "funFact": "I DJ.",
       "id" : "kevin"
+    },
+    {
+      "name": "Vanney Huang",
+      "role": "Sports Chair",
+      "major": "Electrical Engineering",
+      "class": "Fall 2016",
+      "funFact": "I'm scared of bugs.",
+      "id":"vanney"
     }
   ]
 }
