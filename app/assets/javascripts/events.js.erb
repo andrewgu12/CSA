@@ -1,4 +1,4 @@
-var app = angular.module('eventsApp', ['ngRoute', 'templates']);
+var app = angular.module('eventsApp', ['ngRoute', 'templates', 'ngSanitize']);
 
 app.config([
   '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {  
@@ -13,12 +13,12 @@ app.config([
 ]);
 app.controller('EventsCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
 	var eventID = $routeParams.id;
-	$http.get('../events.json').success(function(data){
+	$http.get('../events.json').success(function(data){		
 		for(var index = 0; index < data.events.length; index++) {
 			if(data.events[index].id === eventID) {
 				$scope.eventName = data.events[index].name;
 				$scope.eventDate = data.events[index].date;
-				$scope.eventDescription = data.events[index].description;
+				$scope.description = data.events[index].description;
 				$scope.eventID = data.events[index].id;
 				$scope.eventPics = data.events[index].pics;
 			}

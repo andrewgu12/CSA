@@ -1,9 +1,11 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*
+These are the styles for all the pages sans the home page and the admin backend.  
+*/
+/*place any variables here */
+$footerHeight: 20px;
 
+/* media queries */
 @media(max-width: 768px) {
-
 	div#content {
 		padding-left: 25px;
 		padding-right: 25px;
@@ -12,35 +14,10 @@
 		img {
 			margin-left: 15px;
 		}
-		img: hover {
+		img:hover {
 			opacity: 1;
 		}
 	}
-}
-html {
-
-	/*background: image-url('home_background.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	background-color: transparent;*/
-	min-width: 100%;
-	position: relative;
-	min-height: 100%;
-	overflow-x: hidden;
-}
-$footerHeight: 20px;
-body {
-	margin-bottom: $footerHeight;
-	overflow-x: hidden;
-}
-div.navbar-header {
-	padding-left: 10px;
-}
-.navbar-brand {
-	padding-top: 5px;
-	padding-bottom: 0;	
 }
 @media(max-width: 400px) {
 	span#credit {
@@ -50,10 +27,8 @@ div.navbar-header {
 		float: none !important;
 	}
 }
-nav#otherPagesBar {
-	
-	margin-bottom: 0;
-	@media(min-width: 800px) {
+@media(min-width: 800px) {
+	nav#otherPagesBar {
 		li:hover {
 			background: #FFF;		
 			transition: background-color 1s;
@@ -62,126 +37,181 @@ nav#otherPagesBar {
 			color: #000;
 			transition: color 1s;
 		}
-	}	
+	}
 }
-div.collapse.navbar-collapse.in ul{
-	padding-left: 10px;
+@media(min-width: 992px) {
+	div#verizon_logo {
+		margin-top: 15%;			
+	}
+}
+/*end media queries*/
+
+/*
+general page styles
+these styles are either for the overall template or the class just appears in multiple places
+*/
+html {
+	min-width: 100%;
+	position: relative;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+body {
+	margin-bottom: $footerHeight;
+	overflow-x: hidden;
 }
 div.container-fluid {
 	padding-left: 0;
 	padding-right: 0;
 	margin: 0;
-
 }
+/*end general body styles*/
+
+/*navbar styles*/
+nav#otherPagesBar {
+	margin-bottom: 0;		
+	div.navbar-header {
+		padding-left: 10px;
+		.navbar-brand {
+			padding-top: 5px;
+			padding-bottom: 0;	
+		}
+	}
+	div.collapse.navbar-collapse.in ul{
+		padding-left: 10px;
+	}
+}
+/*end navbar styles*/
+
+/*begin page content styles*/
 div#bodyContent {
 	padding-bottom: 10px;
-}
-div.jumbotron {
-	padding: 0;
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-}
-
-div#content {
-	max-width: 960px;
-	margin: 0 auto;
-	padding-right: 5px;
-	padding-left: 5px;
-	div.title {
-		border-bottom: 1px dotted #000;
-		margin-bottom: 20px;
-	}
-	label.control-label {
-		text-align: left;
-	}
-	div.photoSet {
-		img:hover {
-			opacity: 0.6;
-			-webkit-transition: opacity 0.5s;
-			   -moz-transition: opacity 0.5s;
-			    -ms-transition: opacity 0.5s;
-			     -o-transition: opacity 0.5s;
-			        transition: opacity 0.5s;
-		}
-	}
-	span.small_title {
-		font-size: 16px;
-	}
-	div#verizon_logo {
+	div.jumbotron {
+		padding: 0;
 		img {
-				height: 114px;	
-				margin: 0 auto;
-			}		
-	}
-	@media(min-width: 992px) {
-		div#verizon_logo {
-			margin-top: 15%;			
-		}
-	}
-	div#officersPage {
-		
-		// margin: 0 auto;
-		div#officerPics {
-			max-width: 750px;
+			display: block;
 			margin: 0 auto;
-			div.officer {
-				display: inline;
-				img {
-					height: 140px;
-					width: 140px;
-					margin-bottom: 5px;
-					margin-right: 5px;
-					cursor: move;
-					box-shadow: 1px 1px 1px #D5D5D5;
-				}
-				img:hover {
-					opacity: 0.6;
-					-webkit-transition: opacity 0.5s;
-					   -moz-transition: opacity 0.5s;
-					    -ms-transition: opacity 0.5s;
-					     -o-transition: opacity 0.5s;
-					        transition: opacity 0.5s;
-				}
-				div.description {
-					display: none;
-				}
-				div.modal {
-					h4 {
-						font-weight: bold;
-					}
-					p {
-						font-size: 16px;
-					}
-				}
-			}			
-
 		}
-		div#moreDetails {
-			max-height: 450px;
-			margin-left: 0;		
+	}
+	div#content {
+		max-width: 960px;
+		margin: 0 auto;
+		padding-right: 5px;
+		padding-left: 5px;
+		form {
+			textarea {
+				resize: vertical;
+			}
+			label.control-label {
+				text-align: left;
+			}
+		}
+		/*separates the title from the actual content */
+		div.title {
+			border-bottom: 1px dotted #000;
+			margin-bottom: 20px;
+		}		
+		div.photoSet {
+			img:hover {
+				opacity: 0.6;
+				-webkit-transition: opacity 0.5s;
+				-moz-transition: opacity 0.5s;
+				-ms-transition: opacity 0.5s;
+				-o-transition: opacity 0.5s;
+				transition: opacity 0.5s;
+			}
+		}
+		div#sponsorsContent {
+			span.small_title {
+				font-size: 16px;
+			}
+			p#sponsor_op {
+				margin: 30px 0;
+			}
+			div#verizon_logo {
+				img {
+					height: 114px;	
+					margin: 0 auto;
+				}		
+			}
+		}
+		div#calendar {
+			width: 100%;
+			margin: 0 auto;
+		}
+		div.event {
 			p {
-				margin-right: 10px;
-				margin-left: 10px;				
+				font-size: 16px;
+			}
+		}
+		form#addNew {				
+			div.form-group {
+				margin-left: 0;
+				label.control-label {
+					text-align: left;
+					padding-left: 0;
+				}
+				div.col-sm-10, div.col-sm-8 {
+					padding-left: 0;
+				}
+			}
+			div.selectMenu {	
+			padding: 0;				
+				label.control-label {
+					padding-right: 0;
+				}		
+			}
+			/*thank default settings for this.. default was 4 changed to 2 so everything can align*/
+			input[name="registration[shirtSize]"] {
+				margin-top: 2px;
+			}
+		}
+		div#officersPage {		
+			div#officerPics {
+				max-width: 750px;
+				margin: 0 auto;
+				div.officer {
+					display: inline;
+					img {
+						height: 140px;
+						width: 140px;
+						margin-bottom: 5px;
+						margin-right: 5px;
+						cursor: move;
+						box-shadow: 1px 1px 1px #D5D5D5;
+					}				
+			        div.description {
+			        	display: none;
+			        }
+			        div.modal {
+			        	h4 {
+			        		font-weight: bold;
+			        	}
+			        	p {
+			        		font-size: 16px;
+			        	}
+			        }
+			    }			
+			}
+			div#moreDetails {
+				max-height: 450px;
+				margin-left: 0;		
+				p {
+					margin-right: 10px;
+					margin-left: 10px;				
+				}
 			}
 		}
 	}
 }
+/*end page content styles*/
 
 
-div#calendar {
-	width: 100%;
-	margin: 0 auto;
-}
 
-textarea {
-	resize: vertical;
-}
 
-div.selectMenu{
-	padding: 0;
-}
+
+
+
 
 footer {
 	position: absolute;
@@ -209,29 +239,3 @@ footer {
 	}
 }
 
-form#addNew {
-	// padding-top: 100px;
-	div.form-group {
-		margin-left: 0;
-		label.control-label {
-			text-align: left;
-			padding-left: 0;
-		}
-		div.col-sm-10, div.col-sm-8 {
-			padding-left: 0;
-		}
-	}
-	div.selectMenu {
-		// padding-top: 50px;
-		label.control-label {
-			padding-right: 0;
-		}
-		div.col-sm-10, div.col-sm-8{
-			// padding-right: 0;
-		}
-	}
-	// thank default settings for this.. default was 4 changed to 2 so everything can align
-	input[name="registration[shirtSize]"] {
-		margin-top: 2px;
-	}
-}

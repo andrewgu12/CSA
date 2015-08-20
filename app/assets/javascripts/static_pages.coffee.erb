@@ -13,6 +13,7 @@ ready = ->
 	# 		{src: '<%= asset_path('background_2.jpg')%>'}
 	# 		{src: '<%= asset_path('background_3.jpg')%>'}
 	# 	]
+	
 	$('#calendar').fullCalendar 
 		googleCalendarApiKey: '<%= ENV["GOOGLE_CALENDAR_API_KEY"] %>'		
 		events: 
