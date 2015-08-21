@@ -1,9 +1,33 @@
 <div class="title">
 <h1>Sign Up!</h1>
 <p>Welcome! Fill out this form and you'll automatically be included in our listserv emails so you can get all our exciting news and announcements!</p>
-<p>Please select your shirt size when you register. The t-shirt cost will be $10 and we'll soon send out an email telling you where you can pick it up!</p>
+<p>Please select your shirt size when you register. Here's what the shirt looks like: <a href="#" data-toggle="modal" data-target="#tshirt-modal">CSA T-Shirt</a>. The t-shirt cost will be $10 and we'll soon send out an email telling you where you can pick it up!</p>
 <p>After you register here, please don't forget to sign up on <a href="https://orgsync.com/64457/chapter">OrgSync</a>!</p>
 </div>
+<div class = "modal fade" id="tshirt-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">CSA T-Shirt</h4>
+			</div>
+			<div class="modal-body row">
+	  			<div class="col-md-6 left shirt">	
+	  				<h4>Front</h4>		      				
+	  				<%= image_tag('ShirtFront.JPG', id: 'ShirtFront', class: 'img-responsive') %> 
+	  			</div>
+	  			<div class="col-md-6 right shirt">
+	  				<h4>Back</h4>
+	  				<%= image_tag('ShirtBack.jpg', id: 'ShirtBack', class: 'img-responsive') %> 
+	  			</div>	  			
+	  		</div>
+	  		<div class="modal-footer">
+	    		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>			        
+	  		</div>
+		</div>
+	</div>
+</div>
+
 <%= form_for(:register, :html => {class: "form-horizontal", :id=>"addNew"}) do |f| %>
 	<% if @register.errors.any? %>
 		<div id="error_explanation">
