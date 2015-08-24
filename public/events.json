@@ -3,7 +3,9 @@
         {
             "name": "Mooncake Festival",
             "id": "mooncake_festival",
-            "date": "Fall 2015",
+            "date": "September 24, 2015",
+            "time": "5PM - 10PM",
+            "location": "Art-Socy 2203",
             "description": "At our first General Body Meeting of the year, we will not only be celebrating the mooncake festival but will also be introducing the Chinese Student Association. Students will learn about the club, be introduced to the  E-Board, meet new friends, and learn about the mooncake festival all the while enjoying some delicious mooncake and tea. Come and join us, especially if you’re new to campus!",
             "pics": [
                 {
@@ -17,6 +19,8 @@
             "name":"Concessions",
             "id":"concessions",
             "date":"Fall 2015",
+            "time": "varies, check the calendar!",
+            "location": "Byrd Stadium",
             "description": "Each year, CSA will work the concession stands during football games! You will have the opportunity to prepare and fry food, serve customers, and enjoy as much fried food as you want while helping out. Please email us at <a href='mailto:csacollegepark@gmail.com'>csacollegepark@gmail.com</a> if you would like to help. Come and join us!",
             "pics": [
                 {
@@ -30,6 +34,8 @@
             "name": "Dumpling Night",
             "id": "dumpling_night",
             "date": "Fall 2015",
+            "time": "TBD",
+            "location": "TBD",
             "description": "Dumpling Night is an annual fall semester General Body Meeting (GBM) where people come together and learn how to make dumplings. Dumpling materials such as the stuffing and dumpling skins will be provided. We teach students how to make dumplings. CSA cooks the dumplings while you enjoy the company of those around you. ",
             "pics": [
                 {
@@ -43,6 +49,8 @@
             "name": "Hot Pot Night",
             "id": "hotpot_night",
             "date": "Fall 2015",
+            "time": "TBD",
+            "location": "TBD",
             "description": "Come and enjoy some hotpot with CSA! For a nominal fee, you’ll enjoy an assortment of delicious food with a table of people. We will provide the hot pot materials, stove, and even entertainment. You just have to show up and get ready to cook and feast.",
             "pics": [
                 {
@@ -56,6 +64,8 @@
             "name": "Lunar Banquet",
             "id": "lunar_banquet",
             "date": "Spring 2016",
+            "time": "TBD",
+            "location": "TBD",
             "description": "Lunar Banquet celebrates the lunar festival. It is our biggest event of the year with more than 400 attendees. Good food and  entertainment are always provided. It's a great chance for everyone to gather around and celebrate the start of a new lunar year.",
             "pics": [
                 {
@@ -74,6 +84,8 @@
             "name": "CFEST",
             "id": "cfest",
             "date": "Spring 2016",
+            "time": "TBD",
+            "location": "TBD",
             "description": "Curious about China’s culture? CSA’s CFest will teach you, through a series of fun activities, about the different regions of China. We will have food and prizes, so come and learn about China’s various cultures and lifestyles. ",
             "pics": [
                 {
@@ -87,6 +99,8 @@
             "name": "Basketball Tournament",
             "id": "basketball_tournament",
             "date": "Spring 2016",
+            "time": "TBD",
+            "location": "TBD",
             "description": "CSA’s hosts an intramural basketball tournament every year. Put together a team and you will placed into a bracket against other teams. Each team will pay a nominal fee and the winning team will be awarded a cash prize. If you can’t put together a team, don’t worry! We will try our best to match you with players who want to play but don’t have a team.",
             "pics": [
                 {

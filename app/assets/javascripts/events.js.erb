@@ -18,6 +18,8 @@ app.controller('EventsCtrl', ['$scope', '$http', '$routeParams', function($scope
 			if(data.events[index].id === eventID) {
 				$scope.eventName = data.events[index].name;
 				$scope.eventDate = data.events[index].date;
+				$scope.eventTime = data.events[index].time;
+				$scope.eventLocation = data.events[index].location;
 				$scope.description = data.events[index].description;
 				$scope.eventID = data.events[index].id;
 				$scope.eventPics = data.events[index].pics;
