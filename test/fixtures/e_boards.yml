@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  role: 
+  major: 
+  class: 
+  fun_fact: 
+  id: 
+
+two:
+  name: 
+  role: 
+  major: 
+  class: 
+  fun_fact: 
+  id: 

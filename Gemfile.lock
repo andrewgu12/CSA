@@ -37,10 +37,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    angular-rails-templates (0.1.4)
-      railties (>= 3.1)
-      sprockets
-      tilt
     arel (6.0.0)
     autoparse (0.3.3)
       addressable (>= 2.3.1)
@@ -234,7 +230,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  angular-rails-templates
   autoprefixer-rails
   bootstrap-sass (~> 3.3.4)
   byebug

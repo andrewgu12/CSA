@@ -9,6 +9,7 @@ class AdminController < ApplicationController
     def event_dashboard
 
     end
+    end
 
     def index
       @hide_menu = true
@@ -54,8 +55,6 @@ class AdminController < ApplicationController
       @picture = Picture.new(picture_params)
     end
 
-
-    
     private
     def admin_params
         params.require(:admin).permit(:email, :password)
