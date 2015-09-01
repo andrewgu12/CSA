@@ -9,6 +9,7 @@ class AuxiliariesController < ApplicationController
     @auxiliary = Auxiliary.new(auxiliary_params)
     @auxiliary.approved = 0
     @auxiliary.save
+    AuxiliaryInsert.insert(@auxiliary, 0)
     AuxiliaryMailer.application(@auxiliary).deliver_now
   end
 
@@ -25,7 +26,7 @@ class AuxiliariesController < ApplicationController
   def accept
     @auxiliary = Auxiliary.find(params[:id])
     @auxiliary.approved = 1
-    AuxiliaryInsert.insert(@auxiliary)
+    AuxiliaryInsert.insert(@auxiliary, 1)
     @auxiliary.save
     redirect_to admin_ao_dashboard_path
   end

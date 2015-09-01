@@ -2,7 +2,7 @@ require 'google/api_client'
 require 'google_drive'
 
 module AuxiliaryInsert
-	def self.insert(auxiliary)
+	def self.insert(auxiliary, page_number)
 		keyPath = Rails.root.join('config', 'UMDCSA.p12').to_s
   		key = Google::APIClient::KeyUtils.load_from_pkcs12(keyPath, 'notasecret')
 		auth_client = Signet::OAuth2::Client.new(
@@ -15,7 +15,7 @@ module AuxiliaryInsert
 		access_token = auth_client.access_token
 		session = GoogleDrive.login_with_oauth(access_token)
 
-		ws = session.spreadsheet_by_key("1axfRK-ajkBRMs4SLu8Qbtg8vrarEiq-waDhBSIH3A-4").worksheets[0]
+		ws = session.spreadsheet_by_key("1axfRK-ajkBRMs4SLu8Qbtg8vrarEiq-waDhBSIH3A-4").worksheets[page_number]
 		size = ws.list.size+2
 		ws[size, 1] = auxiliary[:name]
 		ws[size, 2] = auxiliary[:email]

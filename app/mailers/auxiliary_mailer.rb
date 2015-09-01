@@ -1,6 +1,6 @@
 class AuxiliaryMailer < ActionMailer::Base
 
-  self.postmark_settings = { api_key: ENV["POSTMARK_API_KEY"] }
+  self.postmark_settings = { api_key: <%ENV["POSTMARK_API_KEY"]%> }
   default from:"mjiang18@umd.edu"
 
   def application(auxiliary)
@@ -20,7 +20,7 @@ class AuxiliaryMailer < ActionMailer::Base
       when "development"
         "andrew.m.gu@gmail.com"
       when "production"
-        "csacollegepark@gmail.com"
+        "csacollegepark@gmail.com, jsoong1@terpmail.umd.edu"
     end
   end
 
