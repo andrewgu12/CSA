@@ -20,7 +20,7 @@ class AuxiliaryMailer < ActionMailer::Base
       when "development"
         "andrew.m.gu@gmail.com"
       when "production"
-        "csacollegepark@gmail.com, jsoong1@terpmail.umd.edu"
+        "csacollegepark@gmail.com, jsoong1@terpmail.umd.edu, valery.leng@gmail.com"
     end
   end
 
