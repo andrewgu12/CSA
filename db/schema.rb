@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150828023935) do
+ActiveRecord::Schema.define(version: 20150907172852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,17 +44,6 @@ ActiveRecord::Schema.define(version: 20150828023935) do
     t.integer "approved"
   end
 
-  create_table "e_boards", force: :cascade do |t|
-    t.string   "name"
-    t.string   "role"
-    t.string   "major"
-    t.string   "class"
-    t.string   "fun_fact"
-    t.string   "name_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "events", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -62,6 +51,17 @@ ActiveRecord::Schema.define(version: 20150828023935) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "event_id"
+  end
+
+  create_table "officers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "role"
+    t.string   "major"
+    t.string   "grade"
+    t.string   "fun_fact"
+    t.string   "name_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "pictures", force: :cascade do |t|
