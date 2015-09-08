@@ -23,27 +23,13 @@ gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
 
 gem 'postmark-rails'
-
+# Interaction with Google API
 gem 'google-api-client'
 gem 'google_drive'
 
-gem 'angular-rails-templates'
-# gem 'react-rails', '~> 1.0'
-# gem 'google-api-client'
-# gem "friendly_id", "~> 5.0.1"
-
-# gem 'bcrypt', '~> 3.1.7'
-
-# gem 'holder_rails'
 
 
-# gem 'unicorn'
-
-
-# gem 'capistrano-rails', group: :development
-
-
-group :development, :test do	
+group :development, :test do
 
 	gem 'byebug'
 
