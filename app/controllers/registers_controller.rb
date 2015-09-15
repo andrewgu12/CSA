@@ -10,8 +10,8 @@ class RegistersController < ApplicationController
   def create
     @page_title = "register"
     @register = Register.new(register_params)
-    RegistrationMailer.application(@register).deliver_now
     RegistrationInsert.insert(@register)
+    RegistrationMailer.application(@register).deliver_now
   end
 
   private
