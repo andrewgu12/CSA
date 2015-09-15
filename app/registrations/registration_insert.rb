@@ -1,16 +1,16 @@
 require 'google/api_client'
 require 'google_drive'
 
-module RegistrationInsert 
+module RegistrationInsert
 	def self.insert(registration)
 		keyPath = Rails.root.join('config', 'UMDCSA.p12').to_s
-  		key = Google::APIClient::KeyUtils.load_from_pkcs12(keyPath, 'notasecret')
+		key = Google::APIClient::KeyUtils.load_from_pkcs12(keyPath, 'notasecret')
 		auth_client = Signet::OAuth2::Client.new(
 			:token_credential_uri => 'https://accounts.google.com/o/oauth2/token',
 			:audience => 'https://accounts.google.com/o/oauth2/token',
-		  	:scope => 'https://www.googleapis.com/auth/drive ' + 'https://spreadsheets.google.com/feeds/',
-		  	:issuer => '569408955529-u1fjr2l81sl5rqck9oa43f4heb2nsf7h@developer.gserviceaccount.com',
-		  	:signing_key => key)
+			:scope => 'https://www.googleapis.com/auth/drive ' + 'https://spreadsheets.google.com/feeds/',
+			:issuer => '569408955529-u1fjr2l81sl5rqck9oa43f4heb2nsf7h@developer.gserviceaccount.com',
+			:signing_key => key)
 		auth_client.fetch_access_token!
 		access_token = auth_client.access_token
 		session = GoogleDrive.login_with_oauth(access_token)
