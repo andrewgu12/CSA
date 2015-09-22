@@ -1,6 +1,5 @@
 class AuxiliaryMailer < ActionMailer::Base
-
-  self.postmark_settings = { api_key:   ENV["POSTMARK_API_KEY"] }
+  self.postmark_settings = { api_key: ENV["POSTMARK_API_KEY"] }
   default from:"mjiang18@umd.edu"
 
   def application(auxiliary)
