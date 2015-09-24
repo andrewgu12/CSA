@@ -1,5 +1,5 @@
 class ContactController < ApplicationController
-  
+
   def new
     @page_title = "contact_us"
   end
@@ -10,7 +10,7 @@ class ContactController < ApplicationController
   end
 
   private
-    
+
   def email_params
      params.require(:contact).permit(:first_name, :last_name, :email, :question)
   end
