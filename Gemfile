@@ -28,6 +28,7 @@ gem 'google-api-client'
 gem 'google_drive'
 
 gem 'angular-rails-templates'
+gem 'sidekiq'
 # gem 'react-rails', '~> 1.0'
 # gem 'google-api-client'
 # gem "friendly_id", "~> 5.0.1"
@@ -43,7 +44,7 @@ gem 'angular-rails-templates'
 # gem 'capistrano-rails', group: :development
 
 
-group :development, :test do	
+group :development, :test do
 
 	gem 'byebug'
 

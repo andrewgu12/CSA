@@ -9,7 +9,7 @@ class AuxiliariesController < ApplicationController
     @auxiliary = Auxiliary.new(auxiliary_params)
     @auxiliary.approved = 0
     @auxiliary.save
-    AuxiliaryInsert.insert(@auxiliary, 0)
+    AuxiliaryInsert.delay.insert(@auxiliary, 0)
     AuxiliaryMailer.application(@auxiliary).deliver_now
   end
 
@@ -18,7 +18,7 @@ class AuxiliariesController < ApplicationController
     @auxiliaries = Auxiliary.where(:approved => 1)
   end
 
-  def destroy    
+  def destroy
     Auxiliary.find(params[:id]).destroy
     redirect_to admin_ao_dashboard_path
   end

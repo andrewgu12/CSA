@@ -10,7 +10,7 @@ class RegistersController < ApplicationController
   def create
     @page_title = "register"
     @register = Register.new(register_params)
-    RegistrationInsert.insert(@register)
+    RegistrationInsert.delay.insert(@register)
     RegistrationMailer.application(@register).deliver_now
   end
 
