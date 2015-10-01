@@ -9,8 +9,10 @@ class AuxiliariesController < ApplicationController
     @auxiliary = Auxiliary.new(auxiliary_params)
     @auxiliary.approved = 0
     @auxiliary.save
-    AuxiliaryInsert.delay.insert(@auxiliary, 0)
-    AuxiliaryMailer.application(@auxiliary).deliver_now
+    if @auxiliary.valid?
+      AuxiliaryInsert.delay.insert(@auxiliary, 0)
+      AuxiliaryMailer.application(@auxiliary).deliver_now
+    end
   end
 
   def index
