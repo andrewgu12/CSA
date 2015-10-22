@@ -43,6 +43,7 @@ $footerHeight: 20px;
 	div#verizon_logo {
 		margin-top: 8%;
 	}
+
 }
 /*end media queries*/
 
@@ -121,7 +122,7 @@ div#bodyContent {
 				transition: opacity 0.5s;
 			}
 		}
-		div#sponsorsContent {
+		div.sponsorsContent {
 			span.small_title {
 				font-size: 16px;
 			}
@@ -133,6 +134,16 @@ div#bodyContent {
 					height: 114px;
 					margin: 0 auto;
 				}
+			}
+		}
+		div#smallSponsorRow {
+			margin-top: 30px;
+			padding-left: 15px;
+			.col-md-4 {
+				padding: 0;
+			}
+			img {
+				margin: 0 auto;
 			}
 		}
 		div#calendar {
