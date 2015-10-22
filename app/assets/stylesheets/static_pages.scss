@@ -1,5 +1,5 @@
 /*
-These are the styles for all the pages sans the home page and the admin backend.  
+These are the styles for all the pages sans the home page and the admin backend.
 */
 /*place any variables here */
 $footerHeight: 20px;
@@ -30,7 +30,7 @@ $footerHeight: 20px;
 @media(min-width: 800px) {
 	nav#otherPagesBar {
 		li:hover {
-			background: #FFF;		
+			background: #FFF;
 			transition: background-color 1s;
 		}
 		li a:hover {
@@ -41,7 +41,7 @@ $footerHeight: 20px;
 }
 @media(min-width: 992px) {
 	div#verizon_logo {
-		margin-top: 15%;			
+		margin-top: 8%;
 	}
 }
 /*end media queries*/
@@ -69,12 +69,12 @@ div.container-fluid {
 
 /*navbar styles*/
 nav#otherPagesBar {
-	margin-bottom: 0;		
+	margin-bottom: 0;
 	div.navbar-header {
 		padding-left: 10px;
 		.navbar-brand {
 			padding-top: 5px;
-			padding-bottom: 0;	
+			padding-bottom: 0;
 		}
 	}
 	div.collapse.navbar-collapse.in ul{
@@ -110,7 +110,7 @@ div#bodyContent {
 		div.title {
 			border-bottom: 1px dotted #000;
 			margin-bottom: 20px;
-		}		
+		}
 		div.photoSet {
 			img:hover {
 				opacity: 0.6;
@@ -130,9 +130,9 @@ div#bodyContent {
 			}
 			div#verizon_logo {
 				img {
-					height: 114px;	
+					height: 114px;
 					margin: 0 auto;
-				}		
+				}
 			}
 		}
 		div#calendar {
@@ -148,7 +148,7 @@ div#bodyContent {
 			text-align: center;
 			margin-bottom: 10px;
 		}
-		form#addNew {				
+		form#addNew {
 			div.form-group {
 				margin-left: 0;
 				label.control-label {
@@ -159,18 +159,18 @@ div#bodyContent {
 					padding-left: 0;
 				}
 			}
-			div.selectMenu {	
-			padding: 0;				
+			div.selectMenu {
+			padding: 0;
 				label.control-label {
 					padding-right: 0;
-				}		
+				}
 			}
 			/*thank default settings for this.. default was 4 changed to 2 so everything can align*/
 			input[name="registration[shirtSize]"] {
 				margin-top: 2px;
 			}
 		}
-		div#officersPage {		
+		div#officersPage {
 			div#officerPics {
 				max-width: 750px;
 				margin: 0 auto;
@@ -183,7 +183,7 @@ div#bodyContent {
 						margin-right: 5px;
 						cursor: move;
 						box-shadow: 1px 1px 1px #D5D5D5;
-					}				
+					}
 			        div.description {
 			        	display: none;
 			        }
@@ -195,14 +195,14 @@ div#bodyContent {
 			        		font-size: 16px;
 			        	}
 			        }
-			    }			
+			    }
 			}
 			div#moreDetails {
 				max-height: 450px;
-				margin-left: 0;		
+				margin-left: 0;
 				p {
 					margin-right: 10px;
-					margin-left: 10px;				
+					margin-left: 10px;
 				}
 			}
 		}
@@ -220,7 +220,7 @@ div#bodyContent {
 footer {
 	position: absolute;
 	bottom: 0;
-	height: $footerHeight;	
+	height: $footerHeight;
 	margin-top: 15px;
 	padding-top: 5px;
 	border-top: 1px solid #EDEDED;
