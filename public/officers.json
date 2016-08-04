@@ -4,24 +4,25 @@
       "name": "Jimmy Lei",
       "role": "Co-President",
       "major": "Bioengineering",
-      "class": "..space..",
-      "funFact": "..space..",
+      "class": "Spring 2019",
+      "funFact": "I love listening to K-pop, but not watching K-drama.",
       "id": "jimmy"
     },
     {
       "name": "Lucian Lum",
       "role": "Co-President",
       "major": "Computer Science",
-      "class": "..space..",
-      "id": "space1"
+      "class": "Spring 2019",
+      "funFact": "A deer was born in my backyard, so it comes back everyday.",
+      "id": "lucian"
     },
     {
       "name": "Jiahui Liang",
       "role": "Secretary",
       "major": "Applied Math",
-      "class": "..space..",
+      "class": "Spring 2019",
       "funFact": "I trade stocks and make it rains",
-      "id": "space2"
+      "id": "jiahui"
     },
     {
       "name": "Sophia Peng",
@@ -52,14 +53,14 @@
       "role": "Fundraising Chair",
       "major": "Accounting",
       "class": "..space..",
-      "funFact": "..space..",
+      "funFact": "My ultimate goal and dream in life is to raise 12 cats or own a cat island.",
       "id" : "arin"
     },
     {
       "name": "Francis Liang",
       "role": "Fundraising Chair",
       "major": "Accounting & Finance/ Minor: German",
-      "class": "..space..",
+      "class": "Fall 2017",
       "funFact": "Have been to 16 countries; I want to have hot pot every single day",
       "id": "francis"
     },
@@ -67,7 +68,7 @@
       "name": "Sunny Qin",
       "role": "Event Coordinator",
       "major": "Physiology & Neurobiology",
-      "class": "..space..",
+      "class": "Spring 2019",
       "funFact": "I can ride a unicycle",
       "id":"sunny"
     },
@@ -75,31 +76,31 @@
       "name": "Richard Chen",
       "role": "AO Representative",
       "major": "Chemistry",
-      "class": "..space..",
+      "class": "Spring 2019",
       "funFact": "I don't have a middle name nor a Chinese name",
       "id": "richard"
     },
     {
       "name": "LiLi Zheng",
       "role": "AO Representative",
-      "major": "Undecided",
-      "class": "..space..",
-      "funFact": "..space..",
-      "id": "space3"
+      "major": "Economic",
+      "class": "Spring 2019",
+      "funFact": "I like sushi but don't raw fish.",
+      "id": "lili"
     },
     {
       "name": "Kacy Yang",
       "role": "Marketing/Design",
       "major": "Physiology & Neurobiology",
-      "class": "..space..",
-      "funFact": "..space..",
+      "class": "Spring 2017",
+      "funFact": "I have a German Shepard.",
       "id": "kacy"
     },
     {
       "name": "Iris Chen",
       "role": "Marketing/Design",
       "major": "Communication & French",
-      "class": "..space..",
+      "class": "Spring 2018",
       "funFact": "Huge Hong Kong TV drama fan",
       "id": "iris"
     },
@@ -109,7 +110,7 @@
       "major": "Computer Engineering & Family Science",
       "class": "Spring 2019",
       "funFact": "I like Kongfu and action movie. Really enjoy Chinese music",
-      "id": "space4"
+      "id": "lin"
     },
     {
       "name": "Christina Park",
@@ -123,7 +124,7 @@
       "name": "Shuyu Zhang",
       "role": "Historian",
       "major": "Computer Science & Statistics",
-      "class": "..space..",
+      "class": "Spring 2018",
       "funFact": "I learn music for 8 years",
       "id":"shuyu"
     },
@@ -131,7 +132,7 @@
       "name": "William Lu",
       "role": "Historian",
       "major": "Business/Undecided",
-      "class": "..space..",
+      "class": "Spring 2019",
       "funFact": "I waited an hour for a bagel! Own a collection of khaki pants. I have watched every Studio Ghibli film",
       "id": "william"
     },
@@ -139,7 +140,7 @@
       "name": "Andrew Gu",
       "role": "Senior Advisor",
       "major": "Computer Engineering",        
-      "class": "Spring 2018",     
+      "class": "Spring 2018",
       "funFact": "I'm from California, I'm also known as Cali boy among the EBoard.",
       "id" : "andrew"
     },
