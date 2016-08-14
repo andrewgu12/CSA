@@ -1,28 +1,28 @@
 {
   "officers": [
     {
-      "name": "Alice Liu",
+      "name": "Jimmy Lei",
       "role": "Co-President",
-      "major": "Accounting & Finance",
-      "class": "Spring 2016/Winter 2016",
-      "funFact": "I'm ambidextrous.",
-      "id":"alice"
+      "major": "Bioengineering",
+      "class": "Spring 2019",
+      "funFact": "I love listening to K-pop, but not watching K-drama.",
+      "id": "jimmy"
     },
     {
-      "name": "Matthew Jiang",
+      "name": "Lucian Lum",
       "role": "Co-President",
       "major": "Computer Science",
-      "class": "Spring 2018",
-      "funFact": "One of my favorite hobbies is cooking.",
-      "id" : "matt"
+      "class": "Spring 2019",
+      "funFact": "A deer was born in my backyard, so it comes back everyday.",
+      "id": "lucian"
     },
     {
-      "name": "Angela Kang",
-      "role": "VP Administration & Fundraising Chair",
-      "major": "Public Relations",
-      "class": "Spring 2016",
-      "funFact": "I tend to end up on the weird parts of YouTube.",
-      "id" : "angela"
+      "name": "Jiahui Liang",
+      "role": "Secretary",
+      "major": "Applied Math",
+      "class": "Spring 2019",
+      "funFact": "I trade stocks and make it rains",
+      "id": "jiahui"
     },
     {
       "name": "Sophia Peng",
@@ -33,52 +33,124 @@
       "id" : "sophia"
     },
     {
-      "name": "Emily Liang",
-      "role": "VP External",
-      "major": "Physiology & Neurobiology",
-      "class": "Spring 2016",
-      "funFact": "I'm a bubble tea connoisseur.",
-      "id":"emily"
-    },
-    {
-    	"name": "Valery Leng",
-    	"role": "AO Representative",
-        "major": "Bioengineering",        
-    	"class": "Spring 2016",    	
-        "funFact": "I have a huge stash of stuffed animals.",
-    	"id" : "valery"
+      "name": "Matthew Jiang",
+      "role": "External",
+      "major": "Computer Science",
+      "class": "Spring 2018",
+      "funFact": "One of my favorite hobbies is cooking.",
+      "id" : "matt"
     },
     {
       "name": "John Soong",
-      "role": "AO Representative",
+      "role": "External",
       "major": "Aerospace Engineering",
       "class": "Spring 2018",
       "funFact": "I write satire pieces.",
       "id" : "john"
     },
     {
-    	"name": "Andrew Gu",
-    	"role": "Webmaster",
-        "major": "Computer Engineering",        
-    	"class": "Spring 2018",    	
-        "funFact": "I'm also known as Cali boy among the EBoard.",
-    	"id" : "andrew"
+      "name": "Arin Ryu",
+      "role": "Fundraising Chair",
+      "major": "Accounting",
+      "class": "..space..",
+      "funFact": "My ultimate goal and dream in life is to raise 12 cats or own a cat island.",
+      "id" : "arin"
     },
     {
-      "name": "Kevin Chan",
-      "role": "Historian",
-      "major": "Accounting & Supply Chain",
+      "name": "Francis Liang",
+      "role": "Fundraising Chair",
+      "major": "Accounting & Finance/ Minor: German",
+      "class": "Fall 2017",
+      "funFact": "Have been to 16 countries; I want to have hot pot every single day",
+      "id": "francis"
+    },
+    {
+      "name": "Sunny Qin",
+      "role": "Event Coordinator",
+      "major": "Physiology & Neurobiology",
+      "class": "Spring 2019",
+      "funFact": "I can ride a unicycle",
+      "id":"sunny"
+    },
+    {
+      "name": "Richard Chen",
+      "role": "AO Representative",
+      "major": "Chemistry",
+      "class": "Spring 2019",
+      "funFact": "I don't have a middle name nor a Chinese name",
+      "id": "richard"
+    },
+    {
+      "name": "LiLi Zheng",
+      "role": "AO Representative",
+      "major": "Economic",
+      "class": "Spring 2019",
+      "funFact": "I like sushi but don't raw fish.",
+      "id": "lili"
+    },
+    {
+      "name": "Kacy Yang",
+      "role": "Marketing/Design",
+      "major": "Physiology & Neurobiology",
       "class": "Spring 2017",
-      "funFact": "I DJ.",
-      "id" : "kevin"
+      "funFact": "I have a German Shepard.",
+      "id": "kacy"
     },
     {
-      "name": "Vanney Huang",
-      "role": "Sports Chair",
-      "major": "Electrical Engineering",
-      "class": "Fall 2016",
-      "funFact": "I'm scared of bugs.",
-      "id":"vanney"
+      "name": "Iris Chen",
+      "role": "Marketing/Design",
+      "major": "Communication & French",
+      "class": "Spring 2018",
+      "funFact": "Huge Hong Kong TV drama fan",
+      "id": "iris"
+    },
+    {
+      "name": "Lin Chen",
+      "role": "Webmaster",
+      "major": "Computer Engineering & Family Science",
+      "class": "Spring 2019",
+      "funFact": "I like Kongfu and action movie. Really enjoy Chinese music",
+      "id": "lin"
+    },
+    {
+      "name": "Christina Park",
+      "role": "Historian",
+      "major": "TBC (to be changed)",
+      "class": "..space..",
+      "funFact": "I watch dramas and Big Bang is life!",
+      "id" : "christina"
+    },
+    {
+      "name": "Shuyu Zhang",
+      "role": "Historian",
+      "major": "Computer Science & Statistics",
+      "class": "Spring 2018",
+      "funFact": "I learn music for 8 years",
+      "id":"shuyu"
+    },
+    {
+      "name": "William Lu",
+      "role": "Historian",
+      "major": "Business/Undecided",
+      "class": "Spring 2019",
+      "funFact": "I waited an hour for a bagel! Own a collection of khaki pants. I have watched every Studio Ghibli film",
+      "id": "william"
+    },
+    {
+      "name": "Andrew Gu",
+      "role": "Senior Advisor",
+      "major": "Computer Engineering",        
+      "class": "Spring 2018",
+      "funFact": "I'm from California, I'm also known as Cali boy among the EBoard.",
+      "id" : "andrew"
+    },
+    {
+      "name": "Alice Liu",
+      "role": "Alumni Advisor",
+      "major": "Accounting & Finance",
+      "class": "Spring 2016 (graduated)",
+      "funFact": "I'm ambidextrous.",
+      "id": "alice"
     }
   ]
 }
