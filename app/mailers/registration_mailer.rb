@@ -16,9 +16,9 @@ class RegistrationMailer < ActionMailer::Base
   def receiver
     case Rails.env
       when "development"
-        "andrew.m.gu@gmail.com"
+        "watsuplin@gmail.com"
       when "production"
-        "csacollegepark@gmail.com, andrew.m.gu@gmail.com"
+        "csacollegepark@gmail.com, andrew.m.gu@gmail.com, watsuplin@gmail.com"
     end
   end
 
