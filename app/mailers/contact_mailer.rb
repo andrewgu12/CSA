@@ -17,7 +17,7 @@ class ContactMailer < ActionMailer::Base
     # Set receiving email
     case Rails.env
       when "development"
-        "matthewljiang@gmail.com"
+        "matthewljiang@gmail.com, linchen00314@gmail.com"
       when "production"
         "csacollegepark@gmail.com"
     end
