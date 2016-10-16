@@ -48,15 +48,20 @@
         {
             "name": "Dumpling Night",
             "id": "dumpling_night",
-            "date": "October 29th, 2015",
-            "time": "7pm - 10pm",
-            "location": "St. Mary's Multipurpose Room",
+            "date": "October 14th, 2016",
+            "time": "7pm - 9pm",
+            "location": "Nyumburu Cultural Center",
             "description": "Dumpling Night is an annual fall semester General Body Meeting (GBM) where people come together and learn how to make dumplings. Dumpling materials such as the stuffing and dumpling skins will be provided. We teach students how to make dumplings. CSA cooks the dumplings while you enjoy the company of those around you. ",
             "pics": [
                 {
                     "link": "https://www.flickr.com/photos/141733233@N04/albums/72157670416359831",
                     "title": "2014",
                     "id": "dn_2014"
+                },
+                {
+                  "link": "https://www.flickr.com/photos/umcpcsa/albums/72157675256878405",
+                  "title": "2016",
+                  "id": "dn_2016"
                 }
             ]
         },
