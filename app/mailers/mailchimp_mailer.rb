@@ -5,7 +5,7 @@ class MailchimpMailer < ActionMailer::Base
 
   def add_mailchimp_subscriber
     client = Mailchimp::API.new('MAILCHIMP_API_KEY')
-    client.lists.subscribe('76ace423f2', {email: email}, {firstName: => first_name, lastName: => last_name})
+    client.lists.subscribe('MAILCHIMP_LIST_KEY', {email: email}, {firstName: => first_name, lastName: => last_name})
     #default from: "linchen00314@gmail.com"
   end
 
