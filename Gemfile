@@ -29,6 +29,8 @@ gem 'google_drive'
 
 gem 'angular-rails-templates'
 gem 'sidekiq'
+
+gem 'mailchimp-api', require: 'mailchimp'
 # gem 'react-rails', '~> 1.0'
 # gem 'google-api-client'
 # gem "friendly_id", "~> 5.0.1"

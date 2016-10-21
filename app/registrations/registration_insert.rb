@@ -1,5 +1,6 @@
 require 'google/api_client'
 require 'google_drive'
+require 'mailchimp'
 
 module RegistrationInsert
 	def self.insert(registration)

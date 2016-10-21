@@ -16,12 +16,12 @@ Rails.application.routes.draw do
   post '/register' => 'registers#create'
 
   post '/ao/new' => 'auxiliaries#create'
-  resources :auxiliaries, :path => "/ao" do        
-    post 'accept', on: :member    
+  resources :auxiliaries, :path => "/ao" do
+    post 'accept', on: :member
   end
 
   get '/admin/ao/dashboard' => "admin#ao_dashboard"
-  devise_scope :admin do 
+  devise_scope :admin do
     get '/admin' => 'devise/sessions#new'
   end
   # post '/admin' => 'admin#login'
