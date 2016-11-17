@@ -1,114 +1,47 @@
-<div class="title">
-<h1>Sign Up!</h1>
-<p>Welcome! Fill out this form and you'll automatically be included in our listserv emails so you can get all our exciting news and announcements! You can also get announcements by joining our <a href="https://www.facebook.com/groups/1636458876626017/">Facebook</a> group.</p>
-<p>Please select your shirt size when you register. Here's what the shirt looks like: <a href="#" data-toggle="modal" data-target="#tshirt-modal">CSA T-Shirt</a>. The t-shirt cost will be $10 and we'll soon send out an email telling you where you can pick it up!</p>
-<p>After you register here, please don't forget to sign up on <a href="https://orgsync.com/64457/chapter">OrgSync</a>!</p>
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+	<form action="//umdcsa.us14.list-manage.com/subscribe/post?u=MAILCHIMP_API_KEY&amp;id=MAILCHIMP_API_MEMBER_LIST_KEY" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+			<div class="title">
+				<h1>Sign Up!</h1>
+				<p>Welcome! Fill out this form and you'll automatically be included in our UMCPCSA member emails so you can get all our exciting news and announcements!
+		You can also get announcements by joining our <a href="https://www.facebook.com/groups/1636458876626017/">Facebook</a> group.</p>
+				<p>After you register here, please don't forget to sign up on <a href="https://orgsync.com/64457/chapter">OrgSync</a>!</p>
+				<br><p>If you want to become an AO (Auxiliary Officer), there are descriptions and AO application <a href="http://www.umdcsa.org/ao/new">here</a>!<p>
+				<br><p><font color = "red">*</font> You can update your profile by submitting a new application, you should be able to receive an email to update your profile.</p>
+			</div>
+
+			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+			<div class="mc-field-group">
+				<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+				</label>
+				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+				</label>
+				<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+				</label>
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			</div>
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="MAILCHIMP_API_MEMBER_COMBINE_KEY" tabindex="-1" value=""></div>
+    		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    		</div>
+	</form>
 </div>
-<div class = "modal fade" id="tshirt-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">CSA T-Shirt</h4>
-			</div>
-			<div class="modal-body row">
-	  			<div class="col-md-6 left shirt">
-	  				<h4>Front</h4>
-	  				<%= image_tag('ShirtFront2.JPG', id: 'ShirtFront', class: 'img-responsive') %>
-	  			</div>
-	  			<div class="col-md-6 right shirt">
-	  				<h4>Back</h4>
-	  				<%= image_tag('ShirtBack2.jpg', id: 'ShirtBack', class: 'img-responsive') %>
-	  			</div>
-	  		</div>
-	  		<div class="modal-footer">
-	    		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	  		</div>
-		</div>
-	</div>
-</div>
 
-<%= form_for(:register, :html => {class: "form-horizontal", :id=>"addNew"}) do |f| %>
-	<% if @register.errors.any? %>
-		<div id="error_explanation">
-			<h2><%= pluralize(@register.errors.count, "error") %> prohibited this register from being saved:</h2>
-
-			<ul>
-			<% @register.errors.full_messages.each do |message| %>
-				<li><%= message %></li>
-			<% end %>
-			</ul>
-		</div>
-	<% end %>
-
-	<div class="field form-group">
-		<%= f.label :firstName, 'First Name', :class=>'col-sm-2 control-label' %>
-		<div class="col-sm-10">
-			<%= f.text_field :firstName, :required=>true, :class=>"form-control", :placeholder => 'First Name' %>
-		</div>
-	</div>
-	<div class="field form-group">
-		<%= f.label :lastName, 'Last Name', :class=>'col-sm-2 control-label' %>
-		<div class="col-sm-10">
-			<%= f.text_field :lastName, :class=>"form-control", :placeholder => 'Last Name' %>
-		</div>
-	</div>
-	<div class="field form-group">
-		<%= f.label :email, 'Email', :class=>'col-sm-2 control-label' %>
-		<div class="col-sm-10">
-			<%= f.text_field :email, :required=>true, :class=>"form-control", :placeholder => 'name@email.com' %>
-		</div>
-	</div>
-	<!-- <div class="form-group row"> -->
-		<!-- <div class="col-md-6 selectMenu"> -->
-			<div class="field form-group">
-				<%= f.label :shirtSize, 'Shirt Size', :class=>'col-sm-2 control-label' %>
-				<div class="col-sm-10 btn-group">
-					<div class="radio">
-						<label for="small">
-							<%=f.radio_button :shirtSize, "Small", :id=>"Small", :checked=>true %>
-							Small
-						</label>
-					</div>
-					<div class="radio">
-						<label for="medium">
-							<%=f.radio_button :shirtSize, "Medium", :id=>"Medium" %>
-							Medium
-						</label>
-					</div>
-					<div class="radio">
-						<label for="large">
-							<%=f.radio_button :shirtSize, "Large", :id=>"Large" %>
-							Large
-						</label>
-					</div>
-					<div class="radio">
-						<label for="none">
-							<%=f.radio_button :shirtSize, "none", :id=>"none" %>
-							Don't need one
-						</label>
-					</div>
-					<!--<%= f.select :shirtSize, options_for_select([['Small', 'small'], ['Medium', 'medium'], ['Large', 'large'], ['Do not need one', 'none']], selected: :shirtSize), {}, {:class => 'form-control'} %> -->
-
-				</div>
-			</div>
-		<!-- </div>       -->
-		<!-- <div class="col-md-6 selectMenu"> -->
-			<div class="field form-group">
-				<%= f.label :year, 'Year', :class=>'col-sm-2 control-label' %>
-				<div class="col-sm-10">
-					<!-- <%= f.text_field :year %>-->
-					<%= f.select :year, options_for_select([['Freshmen', 'freshmen'], ['Sophomore', 'sophomore'], ['Junior', 'junior'], ['Senior', 'senior'], ['Other', 'other']], selected: :year),{}, {:class => 'form-control'}  %>
-				</div>
-			</div>
-		<!-- </div> -->
-	<!-- </div> -->
-	<div class="form-group actions">
-	    <div class="col-sm-offset-2 col-sm-10">
-	    	<!-- <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Sign up!</button> -->
-	    	<%= button_tag(type: 'submit', class: "btn btn-red btn-default") do %>
-			 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Sign up!
-			<% end %>
-	    </div>
-  	</div>
-<% end %>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
