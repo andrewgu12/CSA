@@ -68,22 +68,27 @@
         {
             "name": "Hot Pot Night",
             "id": "hotpot_night",
-            "date": "Fall 2015",
-            "time": "TBD",
-            "location": "TBD",
+            "date": "November 17th, 2016",
+            "time": "7pm - 9pm",
+            "location": "Nyumburu Cultural Center",
             "description": "Come and enjoy some hotpot with CSA! For a nominal fee, you’ll enjoy an assortment of delicious food with a table of people. We will provide the hot pot materials, stove, and even entertainment. You just have to show up and get ready to cook and feast.",
             "pics": [
                 {
-                    "link": "https://www.flickr.com/photos/141733233@N04/albums/72157670049337840",
-                    "title": "2014",
-                    "id": "hn_2014"
+                  "link": "https://www.flickr.com/photos/141733233@N04/albums/72157670049337840",
+                  "title": "2014",
+                  "id": "hn_2014"
+                },
+                {
+                  "link": "https://www.flickr.com/photos/umcpcsa/albums/72157672878492134",
+                  "title":"2014",
+                  "id":"hn_2016"
                 }
             ]
         },
         {
             "name": "Lunar Banquet",
             "id": "lunar_banquet",
-            "date": "Spring 2016",
+            "date": "Spring 2017",
             "time": "TBD",
             "location": "TBD",
             "description": "Lunar Banquet celebrates the lunar festival. It is our biggest event of the year with more than 400 attendees. Good food and  entertainment are always provided. It's a great chance for everyone to gather around and celebrate the start of a new lunar year.",
