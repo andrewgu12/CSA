@@ -35,7 +35,7 @@
     {
       "name": "John Soong",
       "role": "External",
-      "major": "Aerospace Engineering",
+      "major": "Aerospace Engineering & Economic & Physics Minor",
       "class": "Spring 2018",
       "funFact": "Constantly sick",
       "id" : "john"
@@ -78,7 +78,7 @@
       "major": "Marketing",
       "class": "Spring 2019",
       "funFact": "I like sleeping and watering my plants.",
-      "id": "space1"
+      "id": "karen"
     },
     {
       "name": "Elizabeth Huang",
