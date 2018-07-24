@@ -1,0 +1,93 @@
+total 1296
+drwxr-xr-x+  92 linchen  staff    3128 Sep 14 01:27 .
+drwxr-xr-x    5 root     admin     170 Jul 31  2016 ..
+-rw-r--r--@   1 linchen  staff   18436 Sep 13 02:54 .DS_Store
+drwx------   13 linchen  staff     442 Sep 13 02:32 .Trash
+-rw-------    1 linchen  staff     998 Jun  1 16:34 .Xauthority
+drwxr-xr-x    4 linchen  staff     136 Oct  5  2014 .adobe
+drwxr-xr-x   16 linchen  staff     544 Jun  1 18:30 .android
+drwxr-xr-x   14 linchen  staff     476 Oct  6  2016 .atom
+-rw-------    1 linchen  staff    8192 Nov  9  2016 .bash_history
+-rw-r--r--    1 linchen  staff     375 May 31 17:52 .bash_profile
+drwxr-xr-x   73 linchen  staff    2482 Oct 10  2016 .bash_sessions
+drwxr-xr-x    3 linchen  staff     102 Jul  7  2016 .bundle
+drwxr-xr-x    4 linchen  staff     136 Oct  7  2016 .cache
+drwxr-xr-x    7 linchen  staff     238 May 31 16:48 .config
+drwx------    3 linchen  staff     102 Jan 21  2015 .cups
+drwxr-xr-x    9 linchen  staff     306 Mar 27 13:00 .eclipse
+-rw-r--r--    1 linchen  staff      18 Jun  1 16:52 .emacs
+drwxr-xr-x    3 linchen  staff     102 Mar 17  2016 .emacs.d
+-rw-------    1 linchen  staff      16 Mar 24 21:25 .emulator_console_auth_token
+drwxr-xr-x    4 linchen  staff     136 Oct 10  2016 .gem
+-rw-r--r--    1 linchen  staff      97 Sep 17  2016 .gitconfig
+drwxr-xr-x    6 linchen  staff     204 Oct 22  2016 .gradle
+-rw-------    1 linchen  staff      38 Aug 30  2016 .guard_history
+drwxr-xr-x    5 linchen  staff     170 Sep  2 01:24 .ionic
+-rw-r--r--    1 linchen  staff      69 Aug 30  2016 .irbrc
+drwxr-xr-x    3 linchen  staff     102 Sep 18  2015 .jssc
+drwxr-xr-x    3 linchen  staff     102 Oct  5  2015 .local
+drwxr-xr-x    3 linchen  staff     102 May 31 17:07 .mono
+-rw-------    1 linchen  staff     204 Oct  7  2016 .netrc
+drwxr-xr-x    3 linchen  staff     102 May 31 18:11 .node-gyp
+drwxr-xr-x  362 linchen  staff   12308 Aug 25 17:40 .npm
+drwxr-xr-x   22 linchen  staff     748 May 31 18:02 .nvm
+drwxr-xr-x   15 linchen  staff     510 Nov  5  2016 .oh-my-zsh
+drwxr-xr-x    4 linchen  staff     136 Jun 11 00:49 .oracle_jre_usage
+drwxr-xr-x    8 linchen  staff     272 May 15 01:54 .p2
+-rw-------    1 linchen  staff      53 Sep  9  2016 .pry_history
+-rw-------    1 linchen  staff      13 Jun 22  2016 .psql_history
+drwxr-xr-x    5 linchen  staff     170 Jun 22  2016 .rbenv
+-rw-------    1 linchen  staff      60 Aug 14  2016 .rediscli_history
+-rw-------    1 root     staff    1024 Sep 18  2015 .rnd
+-rw-------    1 linchen  staff      67 Mar 11  2016 .serverauth.1711
+drwx------    5 linchen  staff     170 Jun 22  2016 .ssh
+drwxr-xr-x    6 linchen  staff     204 Jun 22  2016 .subversion
+drwxr-xr-x    3 linchen  staff     102 Sep  2  2016 .tooling
+-rw-------    1 linchen  staff    6211 May 30 19:37 .viminfo
+drwxr-xr-x    2 linchen  staff      68 Oct 12  2015 .wapi
+-rw-r--r--    1 linchen  staff   37851 May 29 17:26 .zcompdump-Lin的MacBook Air-5.0.8
+-rw-r--r--    1 linchen  staff      17 Nov 21  2016 .zsh-update
+-rw-------    1 linchen  staff   23128 Sep 14 01:27 .zsh_history
+-rw-r--r--    1 linchen  staff    3129 May 31 17:58 .zshrc
+-rw-r--r--    1 linchen  staff    2992 May 31 17:38 .zshrc~
+drwxr-xr-x   10 linchen  staff     340 Apr  9 00:49 AndroidStudioProjects
+drwx------    6 linchen  staff     204 Jun 22  2016 Applications
+drwxrwxr-x@   3 linchen  staff     102 Sep  5 22:33 Creative Cloud Files
+drwx------@   3 linchen  staff     102 Sep 23  2014 Creative Cloud Files (archived) (1)
+drwx------+  29 linchen  staff     986 Aug 25 17:34 Desktop
+drwx------+  68 linchen  staff    2312 Jun 11 21:42 Documents
+drwx------+  35 linchen  staff    1190 Sep 13 02:41 Downloads
+drwxr-xr-x    6 linchen  staff     204 Feb 14  2016 Functions practice
+-rw-------    1 linchen  staff   98816 Sep  7  2015 Large Spacer (ipt).ipt
+-rw-------    1 linchen  staff  190976 Sep  7  2015 Large Spacer.idw
+drwx------@  69 linchen  staff    2346 Jun  2 02:36 Library
+drwxr-xr-x    6 linchen  staff     204 Jan 31  2016 Line Counting
+drwx------+   5 linchen  staff     170 Apr  9 00:18 Movies
+drwx------+   5 linchen  staff     170 Apr  9 00:19 Music
+drwx------+   6 linchen  staff     204 Jun  1 04:44 Pictures
+drwxr-xr-x   12 linchen  staff     408 Apr  4  2016 Printf_practice
+drwxr-xr-x    3 linchen  staff     102 Mar 17  2016 Project1_enee140_gen_rnd
+drwxr-xr-x+   5 linchen  staff     170 Sep 16  2014 Public
+drwxr-xr-x    8 linchen  staff     272 Oct 20  2015 SimUText
+-rw-------    1 linchen  staff  190976 Sep  6  2015 Small Spacer - Lin Chen.idw
+-rw-r--r--    1 linchen  staff       0 Apr  3  2016 TERM_PROGRAM=Apple_Terminal
+drwxr-xr-x    5 linchen  staff     170 Sep 19  2015 Things
+drwxr-xr-x    5 linchen  staff     170 Feb  9  2016 char practice
+drwxr-xr-x    7 linchen  staff     238 Feb  9  2016 char practice 
+drwxr-xr-x    6 linchen  staff     204 Feb 17  2016 count_char
+drwxr-xr-x    6 linchen  staff     204 Feb 17  2016 data_entry
+drwxr-xr-x    6 linchen  staff     204 Mar  1  2016 dec2bin
+drwxr-xr-x    3 linchen  staff     102 Mar 27 13:00 eclipse
+drwxr-xr-x   15 linchen  staff     510 Mar 21  2016 enee140_test_rnd
+drwxr-xr-x    6 linchen  staff     204 Mar 11  2016 extract_letters
+drwxrwxr-x@   3 linchen  staff     102 Apr  3 19:01 lchen110@umd.edu Creative Cloud Files
+-rw-------    1 linchen  staff    1766 Jun 22  2016 ls
+-rw-r--r--    1 linchen  staff     401 Jun 22  2016 ls.pub
+drwxrwxr-x   17 linchen  staff     578 Jun  1 18:22 myApp
+drwxr-xr-x   43 linchen  staff    1462 May 23 14:05 node_modules
+drwxr-xr-x    6 linchen  staff     204 Mar 28  2016 project2_Spy's_Toolkit
+drwxr-xr-x    8 linchen  staff     272 Feb 22  2016 read_divide_int
+drwxr-xr-x    5 linchen  staff     170 Feb 22  2016 read_divide_int.c
+drwxr-xr-x    6 linchen  staff     204 Feb 14  2016 temperature converstion function
+drwxr-xr-x   18 linchen  staff     612 May 29 18:08 test_app
+drwxr-xr-x    6 linchen  staff     204 Mar  8  2016 weekly_challenge_06

@@ -35,7 +35,7 @@
     {
       "name": "John Soong",
       "role": "External",
-      "major": "Aerospace Engineering",
+      "major": "Aerospace Engineering & Economic & Physics Minor",
       "class": "Spring 2018",
       "funFact": "Constantly sick",
       "id" : "john"
@@ -59,7 +59,7 @@
     {
       "name": "Camilla Wu",
       "role": "VP of Internal",
-      "major": "Chemistry",
+      "major": "Econ",
       "class": "Spring 2020",
       "funFact": "Love papayas, cantaloupe, mango, clementines. Don't know how to swim lol",
       "id": "camilla"
@@ -69,7 +69,7 @@
       "role": "VP of Internal",
       "major": "Business",
       "class": "Spring 2019",
-      "funFact": "I know Morse code and Justin Bieber follows me on twitter",
+      "funFact": "",
       "id": "siqin"
     },
     {
@@ -78,7 +78,7 @@
       "major": "Marketing",
       "class": "Spring 2019",
       "funFact": "I like sleeping and watering my plants.",
-      "id": "space1"
+      "id": "karen"
     },
     {
       "name": "Elizabeth Huang",
